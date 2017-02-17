@@ -33,6 +33,10 @@ public class GlassCantileverTest {
         double[] interlayerThicks = {1.5};
         double omega = 0.1;
         assertEquals(12.8, (GlassCantilever.effectiveThicknessDeflection(glassThicks, omega, interlayerThicks)), 0.01);
+        glassThicks = new double[] {10, 8, 6};
+        interlayerThicks = new double[] {1.5, 1.5};
+        omega = 0.1;
+        assertEquals(15.08, (GlassCantilever.effectiveThicknessDeflection(glassThicks, omega, interlayerThicks)), 0.01);
     }
 
     @Test

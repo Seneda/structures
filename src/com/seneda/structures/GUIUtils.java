@@ -15,4 +15,12 @@ public class GUIUtils {
     {
         field.setText(String.format("%."+decimal_places+"f", value));
     }
+
+    public static JTextField getSmallestField(JTextField[] fields)
+    {
+        JTextField smallestField = fields[0];
+        for (int i = 1; i < fields.length; i++)
+            smallestField = (getNumber(fields[i]) < getNumber(smallestField)) ? fields[i] : smallestField;
+        return smallestField;
+    }
 }

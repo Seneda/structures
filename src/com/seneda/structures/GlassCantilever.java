@@ -65,7 +65,14 @@ public class GlassCantilever
         return midHeight;
     }
 
-
+    public static double[] effectiveThicknessesStress(double[] glassThicks, double[] interlayerThicks, double omega, double hEffDefl)
+    {
+        double[] hEffstr = new double[glassThicks.length];
+        for (int j = 0; j < hEffstr.length; j++)
+            hEffstr[j] = sqrt( (pow(hEffDefl, 3)) /
+                    (glassThicks[j] + 2 * omega * distanceFromMidpoint(j+1, glassThicks, interlayerThicks)) );
+        return hEffstr;
+    }
 
     public static double arraySum(double[] a)
     {

@@ -49,7 +49,6 @@ public class FormGlassCantilever {
                 thick_str *= 1000;
                 FieldThickDefl.setText(String.format("%.1f", thick_delf));
                 FieldThickStr.setText(String.format("%.1f",thick_str));
-
             }
         });
     }
