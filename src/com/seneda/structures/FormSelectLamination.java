@@ -163,6 +163,8 @@ public class FormSelectLamination {
         LabelMMHeffStr3.setVisible(show);
     }
 
+
+
     public static void main(String[] args){
         JFrame frame = new JFrame("Choose Lamination Properties");
         frame.setContentPane(new FormSelectLamination().PanelMain);
