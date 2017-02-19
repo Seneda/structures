@@ -6,10 +6,10 @@ import java.util.*;
 /**
  * Created by seneda on 18/02/17.
  */
-public class DataTableParser {
+public class TableParser {
     Map<String, Double> data;
 
-    public DataTableParser(String filename){
+    public TableParser(String filename){
         try {
             BufferedReader reader = new BufferedReader(new FileReader(filename));
             String line, row;
@@ -56,7 +56,7 @@ public class DataTableParser {
     public static void main(String[] args) throws IOException{
         System.out.println(new File(".").getCanonicalPath());
 
-        DataTableParser d = new DataTableParser(new File(".").getCanonicalPath() + "/src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv");
+        TableParser d = new TableParser(new File(".").getCanonicalPath() + "/src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv");
         System.out.println(" data "+d.data.toString());
 
         System.out.println("The value of drawn, as porduced is : " + d.getValue(Glass.structures.DRAWN.toString(), Glass.surfaceProfiles.ASPRODUCED.toString()));

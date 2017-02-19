@@ -9,7 +9,7 @@ public class Glass {
     static double Yma = 1.6;    // MATERIAL PARTIAL FACTOR FOR BASIC ANNEALED GLASS, Always 1.6
     static double Ymv = 1.2;    // MATERIAL PARTIAL FACTOR FOR PRESTRESSED GLASS, Always 1.2
     static double Kv  = 1;      // STRENGTHENING FACTOR, Always 1
-
+    public static double youngsModulus = 70E+9;
 
     /**
      * Implements the glass design strength equation.
@@ -42,24 +42,40 @@ public class Glass {
     public enum surfaceProfiles {ASPRODUCED, SANDBLASTED}
     public enum edgeTypes {ASCUT, SEAMED, POLISHED }
 
-    public static DataTableParser characteristicStrengthOfPrestressedGlasses = new DataTableParser("src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv");
+    public static TableParser characteristicStrengthOfPrestressedGlasses = new TableParser("src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv");
     public static double characteristicStrengthOfPrestressedGlass(structures structure, treatments treatment){
         return characteristicStrengthOfPrestressedGlasses.getValue(structure.toString(), treatment.toString());
     }
 
-    public static DataTableParser factorForLoadDurations = new DataTableParser("src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv");
+    public static TableParser factorForLoadDurations = new TableParser("src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv");
     public static double factorForLoadDuration(loadTypes loadType){
         return factorForLoadDurations.getValue(loadType.toString(), "");
     }
 
-    public static DataTableParser factorForGlassSurfaceProfiles = new DataTableParser("src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv");
+    public static TableParser factorForGlassSurfaceProfiles = new TableParser("src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv");
     public static double factorForGlassSurfaceProfile(structures structure, surfaceProfiles surfaceProfile) {
         return factorForGlassSurfaceProfiles.getValue(structure.toString(), surfaceProfile.toString());
     }
 
-    public static DataTableParser edgeFactors = new DataTableParser("src/com/seneda/structures/materials/glass_data/edge_factors.csv");
+    public static TableParser edgeFactors = new TableParser("src/com/seneda/structures/materials/glass_data/edge_factors.csv");
     public static double edgeFactor(edgeTypes edgeType){
         return edgeFactors.getValue(edgeType.toString(), "");
     };
+
+    public treatments treatment;
+    public surfaceProfiles surfaceProfile;
+    public structures structure;
+    public edgeTypes edgeType;
+
+    public Glass(treatments treatment, surfaceProfiles surfaceProfile, structures structure, edgeTypes edgeType) {
+        this.treatment = treatment;
+        this.surfaceProfile = surfaceProfile;
+        this.structure = structure;
+        this.edgeType = edgeType;
+    }
+
+    public double designStrengthAtEdge(loadTypes loadType){
+        return designStrengthAtEdge(edgeType, loadType, structure, surfaceProfile, treatment);
+    }
 
 }
