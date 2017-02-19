@@ -1,5 +1,7 @@
 package com.seneda.structures;
 
+import com.seneda.structures.cantilever.Loading;
+
 import java.util.Scanner;
 
 /**
@@ -19,8 +21,8 @@ public class DoGlassCantilever {
         double delta  = S.nextDouble();
         System.out.println("Enter the maximum allowed stress : ");
         double stress = S.nextDouble();
-        double t_def = GlassCantilever.thicknessMinDeflection(P, L, E, delta);
-        double t_str = GlassCantilever.thicknessMinStress(P, L, stress);
+        double t_def = Loading.thicknessMinDeflection(P, L, E, delta);
+        double t_str = Loading.thicknessMinStress(P, L, stress);
 
         System.out.println("The minimum thickness based on deflection is : " + t_def);
         System.out.println("The minimum thickness based on stress is : " + t_str);

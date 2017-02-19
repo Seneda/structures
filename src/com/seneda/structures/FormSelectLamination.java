@@ -1,11 +1,11 @@
 package com.seneda.structures;
 
+import com.seneda.structures.cantilever.Loading;
+import com.seneda.structures.cantilever.Lamination;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.util.DoubleSummaryStatistics;
 
 import static com.seneda.structures.GUIUtils.getNumber;
 import static com.seneda.structures.GUIUtils.getSmallestField;
@@ -43,6 +43,10 @@ public class FormSelectLamination {
     private JLabel LabelMMH3;
     private JLabel LabelMML2;
     private JLabel LabelMMHeffStr3;
+    private JLabel HEffDeflEqn;
+    private JLabel HEffStressEqn;
+    private JTextField FieldActualDeflection;
+    private JLabel LabelActualDeflection;
 
     public FormSelectLamination() {
 
@@ -110,8 +114,6 @@ public class FormSelectLamination {
     private void updateEffectiveThicknesses() {
         try {
             double[] glassThicks, interlayerThicks;
-            System.out.println("Radiobutton2 : " + radioButton2Layers.isSelected());
-            System.out.println("Radiobutton3 : " + radioButton3Layers.isSelected());
             JTextField[] hFields, lFields, heffstrFields;
             if (radioButton2Layers.isSelected()) {
                 hFields = new JTextField[]{FieldH1, FieldH2};
@@ -132,9 +134,9 @@ public class FormSelectLamination {
                 interlayerThicks[i] = getNumber(lFields[i]);
             }
             double omega = getNumber(FieldOmega);
-            double heffdefl = GlassCantilever.effectiveThicknessDeflection(glassThicks, omega, interlayerThicks);
+            double heffdefl = Lamination.effectiveThicknessDeflection(glassThicks, omega, interlayerThicks);
             setNumber(FieldHEffDefl, heffdefl, 1);
-            double[] heffstr = GlassCantilever.effectiveThicknessesStress(glassThicks, interlayerThicks, omega, heffdefl);
+            double[] heffstr = Lamination.effectiveThicknessesStress(glassThicks, interlayerThicks, omega, heffdefl);
             double minHEffStr = Double.POSITIVE_INFINITY;
             for (int i = 0; i < heffstr.length; i++) {
                 minHEffStr = Double.min(minHEffStr, heffstr[i]);
@@ -143,6 +145,8 @@ public class FormSelectLamination {
             }
 
             getSmallestField(heffstrFields).setBackground(new Color(250, 100, 100));
+            double actualDeflection = Loading.deflectionFromThickness(1000, 70*1000000000, heffdefl);
+            setNumber(FieldActualDeflection, actualDeflection, 1);
         } catch (java.lang.NumberFormatException e) {
             JTextField[] output = new JTextField[]{FieldHEffDefl, FieldHEffStr1, FieldHEffStr2, FieldHEffStr3};
             for (int i = 0; i < output.length; i++)
@@ -163,6 +167,9 @@ public class FormSelectLamination {
         LabelMMHeffStr3.setVisible(show);
     }
 
+    public JPanel getMainPanel(){
+        return PanelMain;
+    }
 
 
     public static void main(String[] args){

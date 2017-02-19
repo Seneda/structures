@@ -1,7 +1,8 @@
 package com.seneda.structures;
 
+import com.seneda.structures.cantilever.Loading;
+
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -43,8 +44,8 @@ public class FormGlassCantilever {
                 delta /= 1000;
                 sigma = Double.parseDouble(FieldStress.getText());
                 sigma *= 1000000;
-                thick_delf = GlassCantilever.thicknessMinDeflection(L, P, E, delta);
-                thick_str = GlassCantilever.thicknessMinStress(L, P, sigma);
+                thick_delf = Loading.thicknessMinDeflection(L, P, E, delta);
+                thick_str = Loading.thicknessMinStress(L, P, sigma);
                 thick_delf *= 1000; // convert to mm
                 thick_str *= 1000;
                 FieldThickDefl.setText(String.format("%.1f", thick_delf));
@@ -53,6 +54,9 @@ public class FormGlassCantilever {
         });
     }
 
+    public JPanel getMainPanel(){
+        return PanelMain;
+    }
 
     public static void main(String[] args){
         JFrame frame = new JFrame("FormGlassCantilever");

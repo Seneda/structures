@@ -2,17 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ab951e-f69c-40cb-a6bd-f66e0aa8390d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/guava-21.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/opencsv-3.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/glass.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Lamination.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/DataTableParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/glassBallustrade.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/FormMainMenu$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/FormMainMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/GlassCantilever.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/GlassCantileverTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FormMainMenu.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FormMainMenu.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/structures_jar/structures.jar" afterPath="$PROJECT_DIR$/out/artifacts/structures_jar/structures.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/DoGlassCantilever.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/DoGlassCantilever.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormGlassCantilever$1.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormGlassCantilever$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormGlassCantilever.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormGlassCantilever.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$1.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$2.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$3.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$4.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$5.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$6.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$7.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$8.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination.class" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/FormSelectLamination.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form" afterPath="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" afterPath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/GUIUtils.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/GUIUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures.iml" afterPath="$PROJECT_DIR$/structures.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,118 +54,117 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GlassCantilever.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java">
+      <file leaf-file-name="Loading.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state relative-caret-position="65">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Loading#0" expanded="false" />
+                <element signature="method#thicknessMinDeflection#0;class#Loading#0" expanded="false" />
+                <element signature="method#thicknessMinStress#0;class#Loading#0" expanded="false" />
+                <element signature="method#deflectionFromThickness#0;class#Loading#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormGlassCantilever.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java">
+      <file leaf-file-name="Glass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            <state relative-caret-position="3">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3359#3360#0" expanded="true" />
+                <element signature="e#3427#3428#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoGlassCantilever.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormSelectLamination.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2026#2224#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#2258#2456#0" expanded="true" />
-                <element signature="e#2455#2456#0" expanded="true" />
-                <element signature="e#2490#2688#0" expanded="true" />
-                <element signature="e#2687#2688#0" expanded="true" />
-                <element signature="e#2722#2920#0" expanded="true" />
-                <element signature="e#2919#2920#0" expanded="true" />
-                <element signature="e#2954#3152#0" expanded="true" />
-                <element signature="e#3151#3152#0" expanded="true" />
-                <element signature="e#3189#3387#0" expanded="true" />
-                <element signature="e#3386#3387#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResolutionSyntax.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/print/attribute/ResolutionSyntax.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <file leaf-file-name="factor_for_load_duration.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="15" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deflection_eqns.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/images/deflection_eqns.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BorderFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/BorderFactory.java">
+      <file leaf-file-name="characteristic_strength_of_prestressed_glass.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="564" column="25" lean-forward="false" selection-start-line="564" selection-start-column="25" selection-end-line="564" selection-end-column="25" />
+            <state relative-caret-position="75">
+              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUIUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GUIUtils.java">
+      <file leaf-file-name="GlassTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVParser.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/opencsv-3.9.jar!/com/opencsv/CSVParser.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="819">
+              <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BufferedReader.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/BufferedReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3742">
+              <caret line="307" column="51" lean-forward="false" selection-start-line="307" selection-start-column="44" selection-end-line="307" selection-end-column="51" />
               <folding>
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#3011#3012#0" expanded="true" />
+                <element signature="e#3058#3059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormSelectLamination.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+      <file leaf-file-name="glass.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/glass.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataTableParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/DataTableParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-393">
+              <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#433#441#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -148,8 +173,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -158,17 +183,22 @@
       <find>next</find>
       <find>(double)</find>
       <find>Float</find>
-      <find>float</find>
       <find>setEnabled</find>
       <find>set</find>
       <find>dpi</find>
       <find>dpiaware</find>
+      <find>float</find>
+      <find>Syste</find>
+      <find>readlin</find>
+      <find>&quot;com/</find>
+      <find>SINGLECOLUMNTABLE</find>
     </findStrings>
     <replaceStrings>
-      <replace>double</replace>
       <replace>setVisible</replace>
       <replace>how</replace>
       <replace>Double</replace>
+      <replace>double</replace>
+      <replace>&quot;src/com/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar!/javax</dir>
@@ -188,21 +218,35 @@
         <option value="$PROJECT_DIR$/src/FormGlassCantivlever.form" />
         <option value="$PROJECT_DIR$/src/GlassCantilever.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.form" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.groovy" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.java" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/GUIUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/FormMainMenu.form" />
+        <option value="$PROJECT_DIR$/src/FormMainMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java" />
+        <option value="$PROJECT_DIR$/src/glassBallustrade.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Lamination.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/GlassCantilever.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Glass.java" />
+        <option value="$PROJECT_DIR$/glass.csv" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/DataTableParser.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -433,6 +477,20 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -477,28 +535,6 @@
               <option name="myItemId" value="structures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FormGlassCantilever" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -518,7 +554,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="materials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="materials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glass_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cantilever" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -554,6 +638,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -561,37 +659,49 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/seneda/IdeaProjects/structures/.idea/uiDesigner.xml" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/opencsv-3.9.jar!/" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="320" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="ToolWindow" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/seneda/structures/materials" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.seneda.structures.materials" />
       <recent name="com.seneda.structures" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.seneda.structures.cantilever.Lamination" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/seneda/structures/images" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="groovy.util.GroovyTestCase" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.seneda.structures.materials" />
+      <recent name="com.seneda.structures.cantilever" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/test-lib" />
       <recent name="$PROJECT_DIR$/src/com/seneda/structures" />
       <recent name="$PROJECT_DIR$/resources/images" />
       <recent name="$PROJECT_DIR$/image" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LAminations">
+  <component name="RunManager" selected="JUnit.tests">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -796,6 +906,21 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="CheckDataTableParserClass" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.seneda.structures.materials.DataTableParser" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="structures" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="commandline" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.seneda.structures.DoGlassCantilever" />
@@ -841,16 +966,31 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="Full App" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="glassBallustrade" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="structures" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="tests" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="structures" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.seneda.structures" />
-      <option name="MAIN_CLASS_NAME" value="com.seneda.structures.GlassCantileverTest" />
+      <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea " />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
@@ -862,11 +1002,13 @@
       <patterns />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.commandline" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Find Min Thicknesses" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LAminations" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.tests" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Application.CheckDataTableParserClass" />
+      <item index="1" class="java.lang.String" itemvalue="Application.commandline" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Find Min Thicknesses" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LAminations" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Full App" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.tests" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -883,39 +1025,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2017.02.17 at 13h 59m 10s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 04m 58s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 19m 52s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 05m 52s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 20m 00s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 08m 25s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 21m 03s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 08m 35s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 24m 50s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 15m 19s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 25m 28s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 15m 28s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 14h 36m 27s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 15m 45s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 16h 08m 06s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 20m 04s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 16h 10m 38s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 20m 27s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.17 at 16h 11m 06s.xml">
+    <history-entry file="tests - 2017.02.19 at 00h 20m 36s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="743" extended-state="4" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10483871" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -927,13 +1069,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24633431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2796486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -947,6 +1089,36 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10483871" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24633431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -962,495 +1134,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/StrictMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4410">
-          <caret line="294" column="32" lean-forward="false" selection-start-line="294" selection-start-column="32" selection-end-line="294" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2026#2224#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2258#2456#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#2490#2688#0" expanded="true" />
-            <element signature="e#2687#2688#0" expanded="true" />
-            <element signature="e#2722#2920#0" expanded="true" />
-            <element signature="e#2919#2920#0" expanded="true" />
-            <element signature="e#2954#3152#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3189#3387#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122025">
-          <caret line="8135" column="44" lean-forward="false" selection-start-line="8135" selection-start-column="44" selection-end-line="8135" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#377883#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#20744#20745#0" expanded="false" />
-            <element signature="e#20777#20778#0" expanded="false" />
-            <element signature="e#27748#27749#0" expanded="false" />
-            <element signature="e#27815#27816#0" expanded="false" />
-            <element signature="e#29361#29362#0" expanded="false" />
-            <element signature="e#29422#29423#0" expanded="false" />
-            <element signature="e#29478#29479#0" expanded="false" />
-            <element signature="e#29546#29547#0" expanded="false" />
-            <element signature="e#29818#29819#0" expanded="false" />
-            <element signature="e#29873#29874#0" expanded="false" />
-            <element signature="e#29952#29953#0" expanded="false" />
-            <element signature="e#30013#30014#0" expanded="false" />
-            <element signature="e#30070#30071#0" expanded="false" />
-            <element signature="e#30138#30139#0" expanded="false" />
-            <element signature="e#30208#30209#0" expanded="false" />
-            <element signature="e#30260#30261#0" expanded="false" />
-            <element signature="e#30476#30477#0" expanded="false" />
-            <element signature="e#30543#30544#0" expanded="false" />
-            <element signature="e#30736#30737#0" expanded="false" />
-            <element signature="e#30795#30796#0" expanded="false" />
-            <element signature="e#30854#30855#0" expanded="false" />
-            <element signature="e#30910#30911#0" expanded="false" />
-            <element signature="e#30964#30965#0" expanded="false" />
-            <element signature="e#31032#31033#0" expanded="false" />
-            <element signature="e#31091#31092#0" expanded="false" />
-            <element signature="e#31139#31140#0" expanded="false" />
-            <element signature="e#31209#31210#0" expanded="false" />
-            <element signature="e#31257#31258#0" expanded="false" />
-            <element signature="e#31316#31317#0" expanded="false" />
-            <element signature="e#31393#31394#0" expanded="false" />
-            <element signature="e#31455#31456#0" expanded="false" />
-            <element signature="e#31512#31513#0" expanded="false" />
-            <element signature="e#31562#31563#0" expanded="false" />
-            <element signature="e#31611#31612#0" expanded="false" />
-            <element signature="e#31662#31663#0" expanded="false" />
-            <element signature="e#31712#31713#0" expanded="false" />
-            <element signature="e#31758#31759#0" expanded="false" />
-            <element signature="e#31803#31804#0" expanded="false" />
-            <element signature="e#31849#31850#0" expanded="false" />
-            <element signature="e#31894#31895#0" expanded="false" />
-            <element signature="e#31951#31952#0" expanded="false" />
-            <element signature="e#32005#32006#0" expanded="false" />
-            <element signature="e#32062#32063#0" expanded="false" />
-            <element signature="e#32116#32117#0" expanded="false" />
-            <element signature="e#32190#32191#0" expanded="false" />
-            <element signature="e#32250#32251#0" expanded="false" />
-            <element signature="e#32300#32301#0" expanded="false" />
-            <element signature="e#32366#32367#0" expanded="false" />
-            <element signature="e#32433#32434#0" expanded="false" />
-            <element signature="e#32485#32486#0" expanded="false" />
-            <element signature="e#32704#32705#0" expanded="false" />
-            <element signature="e#32766#32767#0" expanded="false" />
-            <element signature="e#33177#33178#0" expanded="false" />
-            <element signature="e#33232#33233#0" expanded="false" />
-            <element signature="e#33324#33325#0" expanded="false" />
-            <element signature="e#33371#33372#0" expanded="false" />
-            <element signature="e#34816#34817#0" expanded="false" />
-            <element signature="e#34863#34864#0" expanded="false" />
-            <element signature="e#35177#35178#0" expanded="false" />
-            <element signature="e#35206#35207#0" expanded="false" />
-            <element signature="e#35423#35424#0" expanded="false" />
-            <element signature="e#35470#35471#0" expanded="false" />
-            <element signature="e#35693#35694#0" expanded="false" />
-            <element signature="e#35720#35721#0" expanded="false" />
-            <element signature="e#38015#38016#0" expanded="false" />
-            <element signature="e#38077#38078#0" expanded="false" />
-            <element signature="e#38152#38153#0" expanded="false" />
-            <element signature="e#38189#38190#0" expanded="false" />
-            <element signature="e#39524#39525#0" expanded="false" />
-            <element signature="e#39551#39552#0" expanded="false" />
-            <element signature="e#40124#40125#0" expanded="false" />
-            <element signature="e#40163#40164#0" expanded="false" />
-            <element signature="e#41124#41125#0" expanded="false" />
-            <element signature="e#41170#41171#0" expanded="false" />
-            <element signature="e#42225#42226#0" expanded="false" />
-            <element signature="e#42265#42266#0" expanded="false" />
-            <element signature="e#42694#42695#0" expanded="false" />
-            <element signature="e#42741#42742#0" expanded="false" />
-            <element signature="e#42786#42787#0" expanded="false" />
-            <element signature="e#42816#42817#0" expanded="false" />
-            <element signature="e#43132#43133#0" expanded="false" />
-            <element signature="e#43215#43216#0" expanded="false" />
-            <element signature="e#48198#48199#0" expanded="false" />
-            <element signature="e#48233#48234#0" expanded="false" />
-            <element signature="e#49727#49728#0" expanded="false" />
-            <element signature="e#49765#49766#0" expanded="false" />
-            <element signature="e#49920#49921#0" expanded="false" />
-            <element signature="e#49950#49951#0" expanded="false" />
-            <element signature="e#50756#50757#0" expanded="false" />
-            <element signature="e#50781#50782#0" expanded="false" />
-            <element signature="e#53804#53805#0" expanded="false" />
-            <element signature="e#53832#53833#0" expanded="false" />
-            <element signature="e#55982#55983#0" expanded="false" />
-            <element signature="e#56005#56006#0" expanded="false" />
-            <element signature="e#57777#57778#0" expanded="false" />
-            <element signature="e#57814#57815#0" expanded="false" />
-            <element signature="e#57860#57861#0" expanded="false" />
-            <element signature="e#57928#57929#0" expanded="false" />
-            <element signature="e#61650#61651#0" expanded="false" />
-            <element signature="e#61693#61694#0" expanded="false" />
-            <element signature="e#63758#63759#0" expanded="false" />
-            <element signature="e#63801#63802#0" expanded="false" />
-            <element signature="e#64070#64071#0" expanded="false" />
-            <element signature="e#64115#64116#0" expanded="false" />
-            <element signature="e#66455#66456#0" expanded="false" />
-            <element signature="e#66492#66493#0" expanded="false" />
-            <element signature="e#69814#69815#0" expanded="false" />
-            <element signature="e#69847#69848#0" expanded="false" />
-            <element signature="e#71624#71625#0" expanded="false" />
-            <element signature="e#71670#71671#0" expanded="false" />
-            <element signature="e#71715#71716#0" expanded="false" />
-            <element signature="e#71753#71754#0" expanded="false" />
-            <element signature="e#72511#72512#0" expanded="false" />
-            <element signature="e#72537#72538#0" expanded="false" />
-            <element signature="e#73504#73505#0" expanded="false" />
-            <element signature="e#73541#73542#0" expanded="false" />
-            <element signature="e#74067#74068#0" expanded="false" />
-            <element signature="e#74096#74097#0" expanded="false" />
-            <element signature="e#74244#74245#0" expanded="false" />
-            <element signature="e#74295#74296#0" expanded="false" />
-            <element signature="e#74817#74818#0" expanded="false" />
-            <element signature="e#74854#74855#0" expanded="false" />
-            <element signature="e#75718#75719#0" expanded="false" />
-            <element signature="e#75743#75744#0" expanded="false" />
-            <element signature="e#75908#75909#0" expanded="false" />
-            <element signature="e#75950#75951#0" expanded="false" />
-            <element signature="e#76331#76332#0" expanded="false" />
-            <element signature="e#76362#76363#0" expanded="false" />
-            <element signature="e#76514#76515#0" expanded="false" />
-            <element signature="e#76571#76572#0" expanded="false" />
-            <element signature="e#77478#77479#0" expanded="false" />
-            <element signature="e#77522#77523#0" expanded="false" />
-            <element signature="e#83404#83405#0" expanded="false" />
-            <element signature="e#83458#83459#0" expanded="false" />
-            <element signature="e#83848#83849#0" expanded="false" />
-            <element signature="e#83872#83873#0" expanded="false" />
-            <element signature="e#84262#84263#0" expanded="false" />
-            <element signature="e#84286#84287#0" expanded="false" />
-            <element signature="e#84656#84657#0" expanded="false" />
-            <element signature="e#84684#84685#0" expanded="false" />
-            <element signature="e#85059#85060#0" expanded="false" />
-            <element signature="e#85088#85089#0" expanded="false" />
-            <element signature="e#88775#88776#0" expanded="false" />
-            <element signature="e#88834#88835#0" expanded="false" />
-            <element signature="e#90092#90093#0" expanded="false" />
-            <element signature="e#90126#90127#0" expanded="false" />
-            <element signature="e#90367#90368#0" expanded="false" />
-            <element signature="e#90405#90406#0" expanded="false" />
-            <element signature="e#92264#92265#0" expanded="false" />
-            <element signature="e#92297#92298#0" expanded="false" />
-            <element signature="e#92533#92534#0" expanded="false" />
-            <element signature="e#92569#92570#0" expanded="false" />
-            <element signature="e#94462#94463#0" expanded="false" />
-            <element signature="e#94495#94496#0" expanded="false" />
-            <element signature="e#95295#95296#0" expanded="false" />
-            <element signature="e#95334#95335#0" expanded="false" />
-            <element signature="e#95713#95714#0" expanded="false" />
-            <element signature="e#95752#95753#0" expanded="false" />
-            <element signature="e#98222#98223#0" expanded="false" />
-            <element signature="e#98273#98274#0" expanded="false" />
-            <element signature="e#98529#98530#0" expanded="false" />
-            <element signature="e#98553#98554#0" expanded="false" />
-            <element signature="e#102469#102470#0" expanded="false" />
-            <element signature="e#102510#102511#0" expanded="false" />
-            <element signature="e#108908#108909#0" expanded="false" />
-            <element signature="e#108955#108956#0" expanded="false" />
-            <element signature="e#109735#109736#0" expanded="false" />
-            <element signature="e#109774#109775#0" expanded="false" />
-            <element signature="e#112469#112470#0" expanded="false" />
-            <element signature="e#112493#112494#0" expanded="false" />
-            <element signature="e#113594#113595#0" expanded="false" />
-            <element signature="e#113618#113619#0" expanded="false" />
-            <element signature="e#114480#114481#0" expanded="false" />
-            <element signature="e#114527#114528#0" expanded="false" />
-            <element signature="e#115193#115194#0" expanded="false" />
-            <element signature="e#115241#115242#0" expanded="false" />
-            <element signature="e#116200#116201#0" expanded="false" />
-            <element signature="e#116247#116248#0" expanded="false" />
-            <element signature="e#119367#119368#0" expanded="false" />
-            <element signature="e#119391#119392#0" expanded="false" />
-            <element signature="e#120495#120496#0" expanded="false" />
-            <element signature="e#120519#120520#0" expanded="false" />
-            <element signature="e#128104#128105#0" expanded="false" />
-            <element signature="e#128164#128165#0" expanded="false" />
-            <element signature="e#130837#130838#0" expanded="false" />
-            <element signature="e#130895#130896#0" expanded="false" />
-            <element signature="e#139054#139055#0" expanded="false" />
-            <element signature="e#139091#139092#0" expanded="false" />
-            <element signature="e#148802#148803#0" expanded="false" />
-            <element signature="e#148842#148843#0" expanded="false" />
-            <element signature="e#150966#150967#0" expanded="false" />
-            <element signature="e#151014#151015#0" expanded="false" />
-            <element signature="e#151162#151163#0" expanded="false" />
-            <element signature="e#151214#151215#0" expanded="false" />
-            <element signature="e#151418#151419#0" expanded="false" />
-            <element signature="e#151495#151496#0" expanded="false" />
-            <element signature="e#155412#155413#0" expanded="false" />
-            <element signature="e#155447#155448#0" expanded="false" />
-            <element signature="e#158404#158405#0" expanded="false" />
-            <element signature="e#158444#158445#0" expanded="false" />
-            <element signature="e#160595#160596#0" expanded="false" />
-            <element signature="e#160643#160644#0" expanded="false" />
-            <element signature="e#161151#161152#0" expanded="false" />
-            <element signature="e#161204#161205#0" expanded="false" />
-            <element signature="e#162134#162135#0" expanded="false" />
-            <element signature="e#162187#162188#0" expanded="false" />
-            <element signature="e#162950#162951#0" expanded="false" />
-            <element signature="e#162990#162991#0" expanded="false" />
-            <element signature="e#163044#163045#0" expanded="false" />
-            <element signature="e#163079#163080#0" expanded="false" />
-            <element signature="e#163123#163124#0" expanded="false" />
-            <element signature="e#163167#163168#0" expanded="false" />
-            <element signature="e#163207#163208#0" expanded="false" />
-            <element signature="e#163243#163244#0" expanded="false" />
-            <element signature="e#163287#163288#0" expanded="false" />
-            <element signature="e#163323#163324#0" expanded="false" />
-            <element signature="e#164165#164166#0" expanded="false" />
-            <element signature="e#164215#164216#0" expanded="false" />
-            <element signature="e#164433#164434#0" expanded="false" />
-            <element signature="e#164469#164470#0" expanded="false" />
-            <element signature="e#164911#164912#0" expanded="false" />
-            <element signature="e#164946#164947#0" expanded="false" />
-            <element signature="e#165102#165103#0" expanded="false" />
-            <element signature="e#165176#165177#0" expanded="false" />
-            <element signature="e#165606#165607#0" expanded="false" />
-            <element signature="e#165647#165648#0" expanded="false" />
-            <element signature="e#166733#166734#0" expanded="false" />
-            <element signature="e#166768#166769#0" expanded="false" />
-            <element signature="e#166932#166933#0" expanded="false" />
-            <element signature="e#166983#166984#0" expanded="false" />
-            <element signature="e#167237#167238#0" expanded="false" />
-            <element signature="e#167284#167285#0" expanded="false" />
-            <element signature="e#167458#167459#0" expanded="false" />
-            <element signature="e#167486#167487#0" expanded="false" />
-            <element signature="e#167794#167795#0" expanded="false" />
-            <element signature="e#167830#167831#0" expanded="false" />
-            <element signature="e#182176#182177#0" expanded="false" />
-            <element signature="e#182221#182222#0" expanded="false" />
-            <element signature="e#188944#188945#0" expanded="false" />
-            <element signature="e#189004#189005#0" expanded="false" />
-            <element signature="e#191515#191516#0" expanded="false" />
-            <element signature="e#191571#191572#0" expanded="false" />
-            <element signature="e#195070#195071#0" expanded="false" />
-            <element signature="e#195130#195131#0" expanded="false" />
-            <element signature="e#199346#199347#0" expanded="false" />
-            <element signature="e#199370#199371#0" expanded="false" />
-            <element signature="e#204437#204438#0" expanded="false" />
-            <element signature="e#204491#204492#0" expanded="false" />
-            <element signature="e#206972#206973#0" expanded="false" />
-            <element signature="e#207028#207029#0" expanded="false" />
-            <element signature="e#212540#212541#0" expanded="false" />
-            <element signature="e#212601#212602#0" expanded="false" />
-            <element signature="e#218948#218949#0" expanded="false" />
-            <element signature="e#218975#218976#0" expanded="false" />
-            <element signature="e#224173#224174#0" expanded="false" />
-            <element signature="e#224262#224263#0" expanded="false" />
-            <element signature="e#226076#226077#0" expanded="false" />
-            <element signature="e#226117#226118#0" expanded="false" />
-            <element signature="e#241329#241330#0" expanded="false" />
-            <element signature="e#241357#241358#0" expanded="false" />
-            <element signature="e#247042#247043#0" expanded="false" />
-            <element signature="e#247070#247071#0" expanded="false" />
-            <element signature="e#247257#247258#0" expanded="false" />
-            <element signature="e#247285#247286#0" expanded="false" />
-            <element signature="e#247464#247465#0" expanded="false" />
-            <element signature="e#247492#247493#0" expanded="false" />
-            <element signature="e#247679#247680#0" expanded="false" />
-            <element signature="e#247707#247708#0" expanded="false" />
-            <element signature="e#247889#247890#0" expanded="false" />
-            <element signature="e#247917#247918#0" expanded="false" />
-            <element signature="e#248098#248099#0" expanded="false" />
-            <element signature="e#248126#248127#0" expanded="false" />
-            <element signature="e#248296#248297#0" expanded="false" />
-            <element signature="e#248324#248325#0" expanded="false" />
-            <element signature="e#248492#248493#0" expanded="false" />
-            <element signature="e#248520#248521#0" expanded="false" />
-            <element signature="e#248750#248751#0" expanded="false" />
-            <element signature="e#248778#248779#0" expanded="false" />
-            <element signature="e#256766#256767#0" expanded="false" />
-            <element signature="e#256794#256795#0" expanded="false" />
-            <element signature="e#256974#256975#0" expanded="false" />
-            <element signature="e#257002#257003#0" expanded="false" />
-            <element signature="e#257853#257854#0" expanded="false" />
-            <element signature="e#257896#257897#0" expanded="false" />
-            <element signature="e#258861#258862#0" expanded="false" />
-            <element signature="e#258943#258944#0" expanded="false" />
-            <element signature="e#270152#270153#0" expanded="false" />
-            <element signature="e#270200#270201#0" expanded="false" />
-            <element signature="e#271883#271884#0" expanded="false" />
-            <element signature="e#271930#271931#0" expanded="false" />
-            <element signature="e#271988#271989#0" expanded="false" />
-            <element signature="e#272049#272050#0" expanded="false" />
-            <element signature="e#275360#275361#0" expanded="false" />
-            <element signature="e#275418#275419#0" expanded="false" />
-            <element signature="e#277949#277950#0" expanded="false" />
-            <element signature="e#278004#278005#0" expanded="false" />
-            <element signature="e#278070#278071#0" expanded="false" />
-            <element signature="e#278132#278133#0" expanded="false" />
-            <element signature="e#281385#281386#0" expanded="false" />
-            <element signature="e#281444#281445#0" expanded="false" />
-            <element signature="e#291942#291943#0" expanded="false" />
-            <element signature="e#291992#291993#0" expanded="false" />
-            <element signature="e#292206#292207#0" expanded="false" />
-            <element signature="e#292233#292234#0" expanded="false" />
-            <element signature="e#292374#292375#0" expanded="false" />
-            <element signature="e#292410#292411#0" expanded="false" />
-            <element signature="e#295124#295125#0" expanded="false" />
-            <element signature="e#295168#295169#0" expanded="false" />
-            <element signature="e#299305#299306#0" expanded="false" />
-            <element signature="e#299338#299339#0" expanded="false" />
-            <element signature="e#299600#299601#0" expanded="false" />
-            <element signature="e#299651#299652#0" expanded="false" />
-            <element signature="e#299698#299699#0" expanded="false" />
-            <element signature="e#299748#299749#0" expanded="false" />
-            <element signature="e#302389#302390#0" expanded="false" />
-            <element signature="e#302460#302461#0" expanded="false" />
-            <element signature="e#302677#302678#0" expanded="false" />
-            <element signature="e#302712#302713#0" expanded="false" />
-            <element signature="e#302981#302982#0" expanded="false" />
-            <element signature="e#303009#303010#0" expanded="false" />
-            <element signature="e#303801#303802#0" expanded="false" />
-            <element signature="e#303829#303830#0" expanded="false" />
-            <element signature="e#332873#332874#0" expanded="false" />
-            <element signature="e#332916#332917#0" expanded="false" />
-            <element signature="e#335699#335700#0" expanded="false" />
-            <element signature="e#335758#335759#0" expanded="false" />
-            <element signature="e#336805#336806#0" expanded="false" />
-            <element signature="e#336845#336846#0" expanded="false" />
-            <element signature="e#342630#342631#0" expanded="false" />
-            <element signature="e#342675#342676#0" expanded="false" />
-            <element signature="e#343614#343615#0" expanded="false" />
-            <element signature="e#343666#343667#0" expanded="false" />
-            <element signature="e#343958#343959#0" expanded="false" />
-            <element signature="e#344017#344018#0" expanded="false" />
-            <element signature="e#344337#344338#0" expanded="false" />
-            <element signature="e#344406#344407#0" expanded="false" />
-            <element signature="e#345535#345536#0" expanded="false" />
-            <element signature="e#345609#345610#0" expanded="false" />
-            <element signature="e#345996#345997#0" expanded="false" />
-            <element signature="e#346062#346063#0" expanded="false" />
-            <element signature="e#346341#346342#0" expanded="false" />
-            <element signature="e#346410#346411#0" expanded="false" />
-            <element signature="e#346573#346574#0" expanded="false" />
-            <element signature="e#346630#346631#0" expanded="false" />
-            <element signature="e#346915#346916#0" expanded="false" />
-            <element signature="e#346950#346951#0" expanded="false" />
-            <element signature="e#347244#347245#0" expanded="false" />
-            <element signature="e#347305#347306#0" expanded="false" />
-            <element signature="e#347598#347599#0" expanded="false" />
-            <element signature="e#347653#347654#0" expanded="false" />
-            <element signature="e#347895#347896#0" expanded="false" />
-            <element signature="e#347956#347957#0" expanded="false" />
-            <element signature="e#348156#348157#0" expanded="false" />
-            <element signature="e#348211#348212#0" expanded="false" />
-            <element signature="e#348456#348457#0" expanded="false" />
-            <element signature="e#348513#348514#0" expanded="false" />
-            <element signature="e#348903#348904#0" expanded="false" />
-            <element signature="e#348959#348960#0" expanded="false" />
-            <element signature="e#349196#349197#0" expanded="false" />
-            <element signature="e#349251#349252#0" expanded="false" />
-            <element signature="e#349440#349441#0" expanded="false" />
-            <element signature="e#349489#349490#0" expanded="false" />
-            <element signature="e#350168#350169#0" expanded="false" />
-            <element signature="e#350225#350226#0" expanded="false" />
-            <element signature="e#351739#351740#0" expanded="false" />
-            <element signature="e#351796#351797#0" expanded="false" />
-            <element signature="e#353271#353272#0" expanded="false" />
-            <element signature="e#353328#353329#0" expanded="false" />
-            <element signature="e#353797#353798#0" expanded="false" />
-            <element signature="e#353854#353855#0" expanded="false" />
-            <element signature="e#354879#354880#0" expanded="false" />
-            <element signature="e#354938#354939#0" expanded="false" />
-            <element signature="e#355124#355125#0" expanded="false" />
-            <element signature="e#355177#355178#0" expanded="false" />
-            <element signature="e#355570#355571#0" expanded="false" />
-            <element signature="e#355627#355628#0" expanded="false" />
-            <element signature="e#355983#355984#0" expanded="false" />
-            <element signature="e#356034#356035#0" expanded="false" />
-            <element signature="e#356593#356594#0" expanded="false" />
-            <element signature="e#356648#356649#0" expanded="false" />
-            <element signature="e#356865#356866#0" expanded="false" />
-            <element signature="e#356914#356915#0" expanded="false" />
-            <element signature="e#357501#357502#0" expanded="false" />
-            <element signature="e#357570#357571#0" expanded="false" />
-            <element signature="e#357784#357785#0" expanded="false" />
-            <element signature="e#357850#357851#0" expanded="false" />
-            <element signature="e#357955#357956#0" expanded="false" />
-            <element signature="e#358008#358009#0" expanded="false" />
-            <element signature="e#358240#358241#0" expanded="false" />
-            <element signature="e#358298#358299#0" expanded="false" />
-            <element signature="e#358550#358551#0" expanded="false" />
-            <element signature="e#358611#358612#0" expanded="false" />
-            <element signature="e#377828#377829#0" expanded="false" />
-            <element signature="e#377878#377879#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/images/deflection_eqns.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structures.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/images/defl_diag.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java">
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Loading#0" expanded="false" />
+            <element signature="method#thicknessMinDeflection#0;class#Loading#0" expanded="false" />
+            <element signature="method#thicknessMinStress#0;class#Loading#0" expanded="false" />
+            <element signature="method#deflectionFromThickness#0;class#Loading#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1476,7 +1173,7 @@
         <state relative-caret-position="930">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1931,13 +1628,6 @@
             <element signature="e#14073#14074#0" expanded="false" />
             <element signature="e#14114#14115#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1532" column="18" lean-forward="false" selection-start-line="1532" selection-start-column="18" selection-end-line="1532" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -2405,41 +2095,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GlassCantileverTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -2449,8 +2108,8 @@
         <state relative-caret-position="278">
           <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="false" />
+            <element signature="e#236#237#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2463,24 +2122,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/images/deflection_eqns.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/print/attribute/ResolutionSyntax.java">
@@ -2491,32 +2143,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="430">
+          <caret line="696" column="16" lean-forward="false" selection-start-line="696" selection-start-column="16" selection-end-line="696" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2026#2224#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2258#2456#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#2490#2688#0" expanded="true" />
-            <element signature="e#2687#2688#0" expanded="true" />
-            <element signature="e#2722#2920#0" expanded="true" />
-            <element signature="e#2919#2920#0" expanded="true" />
-            <element signature="e#2954#3152#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
-            <element signature="e#3189#3387#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
+            <element signature="e#24496#24497#0" expanded="false" />
+            <element signature="e#24553#24554#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="800" column="16" lean-forward="false" selection-start-line="800" selection-start-column="16" selection-end-line="800" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/DoGlassCantilever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormMainMenu.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FormMainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2091#2092#0" expanded="false" />
+            <element signature="e#2123#2124#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/glassBallustrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="148" column="61" lean-forward="false" selection-start-line="148" selection-start-column="61" selection-end-line="148" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6206#6207#0" expanded="true" />
+            <element signature="e#6238#6239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Lamination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#Lamination#0" expanded="false" />
+            <element signature="method#effectiveThicknessDeflection#0;class#Lamination#0" expanded="false" />
+            <element signature="method#distanceFromMidpoint#0;class#Lamination#0" expanded="false" />
+            <element signature="method#layerMidHeight#0;class#Lamination#0" expanded="false" />
+            <element signature="method#effectiveThicknessesStress#0;class#Lamination#0" expanded="false" />
+            <element signature="method#arraySum#0;class#Lamination#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#Loading#0" expanded="false" />
+            <element signature="method#thicknessMinDeflection#0;class#Loading#0" expanded="false" />
+            <element signature="method#thicknessMinStress#0;class#Loading#0" expanded="false" />
+            <element signature="method#deflectionFromThickness#0;class#Loading#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3742">
+          <caret line="307" column="51" lean-forward="false" selection-start-line="307" selection-start-column="44" selection-end-line="307" selection-end-column="51" />
+          <folding>
+            <element signature="e#3011#3012#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/opencsv-3.9.jar!/com/opencsv/CSVParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="861" column="0" lean-forward="false" selection-start-line="861" selection-start-column="0" selection-end-line="861" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/glass.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/DataTableParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-393">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#433#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#3359#3360#0" expanded="true" />
+            <element signature="e#3427#3428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -2580,7 +2404,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
