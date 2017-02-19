@@ -145,7 +145,7 @@ public class FormSelectLamination {
             }
 
             getSmallestField(heffstrFields).setBackground(new Color(250, 100, 100));
-            double actualDeflection = Loading.deflectionFromThickness(1000, 70*1000000000, heffdefl);
+            double actualDeflection = Loading.deflectionFromThickness(1000, 70*1000000000, heffdefl, 1);
             setNumber(FieldActualDeflection, actualDeflection, 1);
         } catch (java.lang.NumberFormatException e) {
             JTextField[] output = new JTextField[]{FieldHEffDefl, FieldHEffStr1, FieldHEffStr2, FieldHEffStr3};

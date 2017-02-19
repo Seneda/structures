@@ -36,7 +36,7 @@ public class Glass {
         return edgeFactor(edgeType) * designStrength(loadType, structure, surfaceProfile, treatment);
     }
 
-    public enum loadTypes {WIND, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
+    public enum loadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
     public enum treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
     public enum structures {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
     public enum surfaceProfiles {ASPRODUCED, SANDBLASTED}

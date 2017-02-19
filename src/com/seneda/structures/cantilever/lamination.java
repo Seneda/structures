@@ -104,10 +104,10 @@ public class lamination {
         return effectiveThicknessesForStress;
     }
 
-    class EffectiveThicknesses{
-        final double forDeflection;
-        final double[] forStress;
-        final double minForStress;
+    public class EffectiveThicknesses{
+        public final double forDeflection;
+        public final double[] forStress;
+        public final double minForStress;
 
         public EffectiveThicknesses(double forDeflection, double[] forStress) {
             this.forDeflection = forDeflection;

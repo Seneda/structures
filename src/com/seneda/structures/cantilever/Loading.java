@@ -22,9 +22,9 @@ public class Loading
     }
 
 
-    public static double deflectionFromThickness(double line_load, double youngs_mod, double thickness)
+    public static double deflectionFromThickness(double line_load, double youngs_mod, double thickness, double length)
     {
-        return  ((4 * line_load * pow(line_load, 3)) / (youngs_mod * pow(thickness, 3)));
+        return  ((4 * line_load * pow(length, 3)) / (youngs_mod * pow(thickness, 3)));
     }
 
 
