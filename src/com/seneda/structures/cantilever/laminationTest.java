@@ -25,9 +25,9 @@ public class laminationTest {
         lamination l = lamination.findSufficientLamination(14E-3, 15E-3, 1.1, 2E6);
         System.out.println("Glasses : "+ Arrays.toString(l.layerThicknesses));
         lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6);
-        assertEquals(15E-3, e.forDeflection, 0.0001);
-        assertEquals(17.1E-3, e.forStress[0], 0.0001);
-        assertEquals(16.1E-3, e.forStress[1], 0.0001);
+        assertEquals(16.3E-3, e.forDeflection, 0.0001);
+        assertEquals(18.0E-3, e.forStress[0], 0.0001);
+        assertEquals(18.0E-3, e.forStress[1], 0.0001);
     }
 
 }
