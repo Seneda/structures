@@ -6,20 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ab951e-f69c-40cb-a6bd-f66e0aa8390d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/structures_jar/structures.jar" afterPath="$PROJECT_DIR$/out/artifacts/structures_jar/structures.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/materials/glass_data/edge_factor.csv" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/materials/glass_data/edge_factor.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/util/test.csv" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/util/test.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/designs/balustrade.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/designs/balustrade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/Glass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/TableParser.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/TableParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassProperties.java" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassProperties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv" afterPath="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_load_duration.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/seneda/structures/util/test.csv" afterPath="$PROJECT_DIR$/src/com/seneda/structures/util/test.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Lamination.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/glassBallustrade.java" afterPath="$PROJECT_DIR$/src/glassBallustrade.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,12 +25,15 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="structures" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TableParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/TableParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="-8">
               <caret line="63" column="123" lean-forward="false" selection-start-line="63" selection-start-column="123" selection-end-line="63" selection-end-column="123" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,7 +45,7 @@
       <file leaf-file-name="GlassTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="-8">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -62,8 +57,8 @@
       <file leaf-file-name="balustrade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/designs/balustrade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="77" lean-forward="false" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
+            <state relative-caret-position="-8">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,11 +66,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableReaderTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TableReaderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/util/TableReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+            <state relative-caret-position="84">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Loading.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="glassBallustrade.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/glassBallustrade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,7 +103,7 @@
       <file leaf-file-name="GlassPropertiesTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassPropertiesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-8">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -98,7 +115,7 @@
       <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/util/test.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="0">
               <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
@@ -108,7 +125,7 @@
       <file leaf-file-name="GlassProperties.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-8">
               <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,8 +137,8 @@
       <file leaf-file-name="lamination.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="-685">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#lamination#0" expanded="false" />
@@ -196,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/FormMainMenu.form" />
         <option value="$PROJECT_DIR$/src/FormMainMenu.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java" />
-        <option value="$PROJECT_DIR$/src/glassBallustrade.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantileverMinThicknesses.form" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.form" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/GlassCantilever.java" />
@@ -206,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/DataTableParser.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Lamination.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java" />
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/TableReader.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/TableReaderTest.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/laminationTest.java" />
@@ -226,6 +241,9 @@
         <option value="$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassProperties.java" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/util/TableReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java" />
+        <option value="$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java" />
+        <option value="$PROJECT_DIR$/src/glassBallustrade.java" />
       </list>
     </option>
   </component>
@@ -623,7 +641,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data" />
   </component>
   <component name="RecentsManager">
@@ -1050,15 +1068,6 @@
     <history-entry file="test_glass_properties - 2017.02.20 at 21h 11m 28s.xml">
       <configuration name="test glass properties" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="tests - 2017.02.20 at 20h 12m 54s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.20 at 20h 13m 23s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.20 at 21h 07m 09s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="tests - 2017.02.20 at 21h 08m 14s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
@@ -1071,6 +1080,24 @@
     <history-entry file="tests - 2017.02.20 at 21h 12m 14s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="tests - 2017.02.20 at 21h 16m 43s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.20 at 21h 42m 59s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.20 at 21h 48m 22s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
@@ -1083,10 +1110,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35559008" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40062112" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.35559008" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1138,6 +1165,9 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1311,43 +1341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/glassBallustrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormGlassCantilever.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="147" column="102" lean-forward="false" selection-start-line="147" selection-start-column="102" selection-end-line="147" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1479,35 +1476,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/designs/balustrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="77" lean-forward="false" selection-start-line="46" selection-start-column="77" selection-end-line="46" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/util/test.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="0">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#lamination#0" expanded="false" />
-            <element signature="method#calcLayerMidPointOffsets#0;class#lamination#0" expanded="false" />
-            <element signature="method#calcLayerMidpoints#0;class#lamination#0" expanded="false" />
-            <element signature="method#arraySum#0;class#lamination#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1529,7 +1502,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="-8">
           <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1539,7 +1512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/GlassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="-8">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1549,7 +1522,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassPropertiesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="-8">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1559,8 +1532,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/materials/TableParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="-8">
           <caret line="63" column="123" lean-forward="false" selection-start-line="63" selection-start-column="123" selection-end-line="63" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/designs/balustrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1569,8 +1552,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/util/TableReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="22" column="85" lean-forward="false" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
+        <state relative-caret-position="84">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/lamination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-685">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#lamination#0" expanded="false" />
+            <element signature="method#calcLayerMidPointOffsets#0;class#lamination#0" expanded="false" />
+            <element signature="method#calcLayerMidpoints#0;class#lamination#0" expanded="false" />
+            <element signature="method#arraySum#0;class#lamination#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/LoadingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="57" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/cantilever/Loading.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="26" column="42" lean-forward="false" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/seneda/structures/FormSelectLamination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="136" column="40" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/glassBallustrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
