@@ -1,7 +1,7 @@
 table name, factor for load duration
 table source, codes
 table layout, single column
-
+,,
 ,Kmod
 Wind,1
 Line,0.89
