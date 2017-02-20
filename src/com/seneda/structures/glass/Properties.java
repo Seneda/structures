@@ -1,6 +1,5 @@
-package com.seneda.structures.materials.glass_data;
+package com.seneda.structures.glass;
 
-import com.seneda.structures.LoadingTest;
 import com.seneda.structures.util.TableReader;
 
 import java.io.FileNotFoundException;
@@ -8,8 +7,8 @@ import java.io.FileNotFoundException;
 /**
  * Created by seneda on 20/02/17.
  */
-public class GlassProperties {
-    public static final String dataPath = "src/com/seneda/structures/materials/glass_data";
+public class Properties {
+    public static final String dataPath = "src/com/seneda/structures/glass/glass_data";
 
     public static final TableReader generalConstants = loadTable("general_constants.csv");
     public static final double YoungsModulus = generalConstants.get("Youngs Modulus");

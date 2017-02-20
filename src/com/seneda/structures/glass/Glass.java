@@ -1,6 +1,6 @@
-package com.seneda.structures.materials;
+package com.seneda.structures.glass;
 
-import static com.seneda.structures.materials.glass_data.GlassProperties.*;
+import static com.seneda.structures.glass.Properties.*;
 
 /**
  * Created by seneda on 18/02/17.

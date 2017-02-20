@@ -1,9 +1,9 @@
 package com.seneda.structures.designs;
 
 import com.seneda.structures.cantilever.Loading;
-import com.seneda.structures.cantilever.lamination;
-import com.seneda.structures.materials.Glass;
-import com.seneda.structures.materials.glass_data.GlassProperties;
+import com.seneda.structures.glass.Lamination;
+import com.seneda.structures.glass.Glass;
+import com.seneda.structures.glass.Properties;
 
 import java.util.Arrays;
 
@@ -20,26 +20,26 @@ public class balustrade {
         interlayerShearModulus = 0.8E6;
         line_load = 1.5E3;
 //        Lamination.layers layers;
-        Glass glass = new Glass(GlassProperties.Treatments.THERMALLYTOUGHENED,
-                                GlassProperties.SurfaceProfiles.ASPRODUCED,
-                                GlassProperties.Material.FLOAT,
-                                GlassProperties.edgeTypes.POLISHED);
+        Glass glass = new Glass(Properties.Treatments.THERMALLYTOUGHENED,
+                                Properties.SurfaceProfiles.ASPRODUCED,
+                                Properties.Material.FLOAT,
+                                Properties.edgeTypes.POLISHED);
 
         double max_deflection, max_stress;
-        max_stress = glass.designStrengthAtEdge(GlassProperties.LoadTypes.LINE);
+        max_stress = glass.designStrengthAtEdge(Properties.LoadTypes.LINE);
         max_deflection = 25E-3;
 
         double min_thick_defl_line;
         double min_thick_str_line;
 
-        min_thick_defl_line = thicknessMinDeflection(height, line_load, GlassProperties.YoungsModulus, max_deflection);
+        min_thick_defl_line = thicknessMinDeflection(height, line_load, Properties.YoungsModulus, max_deflection);
         double ULSLoadFactor = 1.5;
         min_thick_str_line = thicknessMinStress(height, ULSLoadFactor*line_load, max_stress);
 
         System.out.println("Min Thick Defl : "+min_thick_defl_line);
         System.out.println("Min Thick str : "+min_thick_str_line);
 
-        lamination l = lamination.findSufficientLamination(min_thick_defl_line, min_thick_str_line, height, interlayerShearModulus);
+        Lamination l = Lamination.findSufficientLamination(min_thick_defl_line, min_thick_str_line, height, interlayerShearModulus);
 
         System.out.println("Chosen Lamination is  : "+ Arrays.toString(l.layerThicknesses));
 
@@ -47,7 +47,7 @@ public class balustrade {
 
         System.out.println("Effective Thickness for deflection is : " + effective_thickness_for_deflection);
 
-        double actual_deflection = Loading.deflectionFromThickness(line_load, GlassProperties.YoungsModulus, effective_thickness_for_deflection, height);
+        double actual_deflection = Loading.deflectionFromThickness(line_load, Properties.YoungsModulus, effective_thickness_for_deflection, height);
 
         System.out.println("Actual Deflection is now : " + actual_deflection);
     }

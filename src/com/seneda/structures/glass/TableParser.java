@@ -1,6 +1,4 @@
-package com.seneda.structures.materials;
-
-import com.seneda.structures.materials.glass_data.GlassProperties;
+package com.seneda.structures.glass;
 
 import java.io.*;
 import java.util.*;
@@ -58,10 +56,10 @@ public class TableParser {
     public static void main(String[] args) throws IOException{
         System.out.println(new File(".").getCanonicalPath());
 
-        TableParser d = new TableParser(new File(".").getCanonicalPath() + "/src/com/seneda/Material/materials/glass_data/factor_for_glass_surface_profile.csv");
+        TableParser d = new TableParser(new File(".").getCanonicalPath() + "/src/com/seneda/Material/glass/glass_data/factor_for_glass_surface_profile.csv");
         System.out.println(" data "+d.data.toString());
 
-        System.out.println("The value of drawn, as porduced is : " + d.getValue(GlassProperties.Material.DRAWN.toString(), GlassProperties.SurfaceProfiles.ASPRODUCED.toString()));
+        System.out.println("The value of drawn, as porduced is : " + d.getValue(Properties.Material.DRAWN.toString(), Properties.SurfaceProfiles.ASPRODUCED.toString()));
     }
 
 }
