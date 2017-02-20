@@ -18,13 +18,13 @@ public class GlassProperties {
     public static final double MaterialPartialFactorPrestressedGlass = generalConstants.get("Material Partial Factor For Prestressed Glass");
     public static final double StrengtheningFactor = generalConstants.get("Strengthening Factor");
 
-    public static enum loadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
-    public static enum treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
-    public static enum structures {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
-    public static enum surfaceProfiles {ASPRODUCED, SANDBLASTED}
+    public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
+    public static enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
+    public static enum Material {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
+    public static enum SurfaceProfiles {ASPRODUCED, SANDBLASTED}
     public static enum edgeTypes {ASCUT, SEAMED, POLISHED }
 
-    public static final TableReader LoadDurationFactors = loadTable("factor_for_load_duration.csv");
+    public static final TableReader LoadDurationFactor = loadTable("factor_for_load_duration.csv");
     public static final TableReader CharacteristicStrengthOfPrestressedGlass = loadTable("characteristic_strength_of_prestressed_glass.csv") ;
     public static final TableReader FactorForGlassSurfaceProfile = loadTable("factor_for_glass_surface_profile.csv");
     public static final TableReader EdgeFactor = loadTable("edge_factor.csv");

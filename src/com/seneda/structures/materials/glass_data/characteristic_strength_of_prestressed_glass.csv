@@ -1,7 +1,7 @@
 table name, Characteristic strenth of prestressed glass
 table source, codes
 table layout, multi column
-
+,
 ,Annealed,Heat Strengthened,Thermally Toughened,Chemically Toughened
 Float,45000000,70000000,120000000,150000000
 Drawn,45000000,70000000,120000000,150000000

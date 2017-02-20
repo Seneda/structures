@@ -1,5 +1,6 @@
 package com.seneda.structures.materials;
 
+import com.seneda.structures.materials.glass_data.GlassProperties;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,13 +11,22 @@ import static org.junit.Assert.*;
 public class GlassTest {
     @Test
     public void designStrength() throws Exception {
-        double strength = Glass.designStrength(Glass.loadTypes.WIND, Glass.structures.DRAWN, Glass.surfaceProfiles.ASPRODUCED, Glass.treatments.ANNEALED);
+        Glass g = new Glass(GlassProperties.Treatments.ANNEALED,
+                            GlassProperties.SurfaceProfiles.ASPRODUCED,
+                            GlassProperties.Material.DRAWN,
+                            GlassProperties.edgeTypes.ASCUT);
+        double strength = g.designStrength(GlassProperties.LoadTypes.WIND);
         assertEquals(28.125E6, strength, 0.001);
     }
 
     @Test
     public void designStrengthAtEdge() throws Exception {
-        double strengthAtEdge = Glass.designStrengthAtEdge(Glass.edgeTypes.ASCUT, Glass.loadTypes.WIND, Glass.structures.DRAWN, Glass.surfaceProfiles.ASPRODUCED, Glass.treatments.ANNEALED);
+        Glass g = new Glass(GlassProperties.Treatments.ANNEALED,
+                            GlassProperties.SurfaceProfiles.ASPRODUCED,
+                            GlassProperties.Material.DRAWN,
+                            GlassProperties.edgeTypes.ASCUT);
+
+        double strengthAtEdge = g.designStrengthAtEdge(   GlassProperties.LoadTypes.WIND);
         assertEquals(22.5E6, strengthAtEdge, 0.001);
     }
 

@@ -3,6 +3,7 @@ package com.seneda.structures.designs;
 import com.seneda.structures.cantilever.Loading;
 import com.seneda.structures.cantilever.lamination;
 import com.seneda.structures.materials.Glass;
+import com.seneda.structures.materials.glass_data.GlassProperties;
 
 import java.util.Arrays;
 
@@ -19,19 +20,19 @@ public class balustrade {
         interlayerShearModulus = 0.8E6;
         line_load = 1.5E3;
 //        Lamination.layers layers;
-        Glass glass = new Glass(Glass.treatments.THERMALLYTOUGHENED,
-                                Glass.surfaceProfiles.ASPRODUCED,
-                                Glass.structures.FLOAT,
-                                Glass.edgeTypes.POLISHED);
+        Glass glass = new Glass(GlassProperties.Treatments.THERMALLYTOUGHENED,
+                                GlassProperties.SurfaceProfiles.ASPRODUCED,
+                                GlassProperties.Material.FLOAT,
+                                GlassProperties.edgeTypes.POLISHED);
 
         double max_deflection, max_stress;
-        max_stress = glass.designStrengthAtEdge(Glass.loadTypes.LINE);
+        max_stress = glass.designStrengthAtEdge(GlassProperties.LoadTypes.LINE);
         max_deflection = 25E-3;
 
         double min_thick_defl_line;
         double min_thick_str_line;
 
-        min_thick_defl_line = thicknessMinDeflection(height, line_load, Glass.youngsModulus, max_deflection);
+        min_thick_defl_line = thicknessMinDeflection(height, line_load, GlassProperties.YoungsModulus, max_deflection);
         double ULSLoadFactor = 1.5;
         min_thick_str_line = thicknessMinStress(height, ULSLoadFactor*line_load, max_stress);
 
@@ -46,7 +47,7 @@ public class balustrade {
 
         System.out.println("Effective Thickness for deflection is : " + effective_thickness_for_deflection);
 
-        double actual_deflection = Loading.deflectionFromThickness(line_load, Glass.youngsModulus, effective_thickness_for_deflection, height);
+        double actual_deflection = Loading.deflectionFromThickness(line_load, GlassProperties.YoungsModulus, effective_thickness_for_deflection, height);
 
         System.out.println("Actual Deflection is now : " + actual_deflection);
     }
