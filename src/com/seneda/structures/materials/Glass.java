@@ -57,7 +57,7 @@ public class Glass {
         return factorForGlassSurfaceProfiles.getValue(structure.toString(), surfaceProfile.toString());
     }
 
-    public static TableParser edgeFactors = new TableParser("src/com/seneda/structures/materials/glass_data/edge_factors.csv");
+    public static TableParser edgeFactors = new TableParser("src/com/seneda/structures/materials/glass_data/edge_factor.csv");
     public static double edgeFactor(edgeTypes edgeType){
         return edgeFactors.getValue(edgeType.toString(), "");
     };

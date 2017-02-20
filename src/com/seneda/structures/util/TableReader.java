@@ -14,7 +14,7 @@ import java.util.*;
  *
  * table name, NAME
  * table source, DATA SOURCE
- * table layout, [single column, double column]
+ * table layout, [single column, multi column]
  * EMPTY LINE
  *     , Col1, Col2, Col3    ( If table type is single column it will be )     , Col1
  * Row1, Data, Data, Data                                                  Row1, Data
@@ -88,14 +88,21 @@ public class TableReader {
         return string.toUpperCase().replaceAll("\\s+","");
     }
 
-    public Double get(String row, String col){
+    public double get(String row, String col){
         return data.get(stringToIdentifier(row)+stringToIdentifier(col));
     }
 
-    public Double get(String row){
+    public double get(String row){
         return data.get(stringToIdentifier(row)+stringToIdentifier(columns.get(0)));
     }
 
+    public double get(Enum row, Enum col) {
+        return data.get(stringToIdentifier(row.toString())+stringToIdentifier(col.toString()));
+    }
+
+    public double get(Enum row) {
+        return data.get(stringToIdentifier(row.toString())+stringToIdentifier(columns.get(0)));
+    }
 
 }
 

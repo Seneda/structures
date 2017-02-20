@@ -14,7 +14,7 @@ public class TableReaderTest {
         TableReader t = new TableReader("test.csv", "src/com/seneda/structures/util");
         assertEquals("Test", t.tableName);
         assertEquals("made up", t.tableSource);
-        assertEquals("double column", t.tableLayout);
+        assertEquals("multi column", t.tableLayout);
 
         assertEquals(6.0, t.get("Row2", "Col3"), 0.000001);
     }

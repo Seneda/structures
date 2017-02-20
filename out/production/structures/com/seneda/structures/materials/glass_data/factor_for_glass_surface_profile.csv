@@ -1,3 +1,7 @@
+table name, factor for glass surface profile
+table source, codes
+table layout, multi column
+
 ,As Produced,Sandblasted
 Float,1,0.6
 Drawn,1,0.6
