@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
  * Created by seneda on 20/02/17.
  */
 public class Properties {
-    public static final String dataPath = "src/com/seneda/structures/glass/glass_data";
+    public static final String dataPath = "src/main/com/seneda/structures/glass/glass_data";
 
     public static final TableReader generalConstants = loadTable("general_constants.csv");
     public static final double YoungsModulus = generalConstants.get("Youngs Modulus");

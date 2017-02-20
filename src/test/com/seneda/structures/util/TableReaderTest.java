@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class TableReaderTest {
     @Test
     public void testTableReader() throws Exception {
-        TableReader t = new TableReader("test.csv", "src/com/seneda/structures/util");
+        TableReader t = new TableReader("test.csv", "src/main/com/seneda/structures/util");
         assertEquals("Test", t.tableName);
         assertEquals("made up", t.tableSource);
         assertEquals("multi column", t.tableLayout);
@@ -20,7 +20,7 @@ public class TableReaderTest {
     }
     @Test
     public void testTableReaderSingleColumn() throws Exception {
-        TableReader t = new TableReader("test_single.csv", "src/com/seneda/structures/util");
+        TableReader t = new TableReader("test_single.csv", "src/main/com/seneda/structures/util");
         assertEquals("Test Single", t.tableName);
         assertEquals("made up", t.tableSource);
         assertEquals("single column", t.tableLayout);
