@@ -14,8 +14,8 @@ public class CantileverTest {
     @Test
     public void testCantilever() throws Exception {
         double height = 1.1;
-        LoadCase[] loadCases = {new LineLoad(1E3, height),
-                                new UniformLoad(1E3, height)};
+        LoadCase[] loadCases = {new LineLoad(1E3, height, Properties.LoadDurations.SHORT_3S),
+                                new UniformLoad(1E3, height, Properties.LoadDurations.MID_30S)};
         Glass glass = new Glass(
                 Properties.Treatments.THERMALLYTOUGHENED,
                 Properties.SurfaceProfiles.ASPRODUCED,

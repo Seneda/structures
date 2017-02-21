@@ -18,8 +18,10 @@ public class Properties {
     public static final double MaterialPartialFactorPrestressedGlass = generalConstants.get("Material Partial Factor For Prestressed Glass");
     public static final double StrengtheningFactor = generalConstants.get("Strengthening Factor");
     public static final double maxDeflection = generalConstants.get("Maximum Deflection");
+    public static final double ULSFactor = generalConstants.get("ULS Factor");
 
     public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
+    public static enum LoadDurations {SHORT_3S, MID_30S, LONG_300S};
     public static enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
     public static enum Material {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
     public static enum SurfaceProfiles {ASPRODUCED, SANDBLASTED}
@@ -29,6 +31,8 @@ public class Properties {
     public static final TableReader CharacteristicStrengthOfPrestressedGlass = loadTable("characteristic_strength_of_prestressed_glass.csv") ;
     public static final TableReader FactorForGlassSurfaceProfile = loadTable("factor_for_glass_surface_profile.csv");
     public static final TableReader EdgeFactor = loadTable("edge_factor.csv");
+    public static final TableReader InterlayerShearModulus = loadTable("shear_modulii.csv");
+
 
     public static final double[] availableSheetThicknesses = loadList("available_sheet_thicknesses.csv");
     public static final double[] availableInterlayerThicknesses = loadList("available_interlayer_thicknesses.csv");

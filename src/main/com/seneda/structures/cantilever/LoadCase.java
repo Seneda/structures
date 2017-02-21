@@ -10,12 +10,15 @@ public abstract class LoadCase {
     public final Properties.LoadTypes loadType;
     public final double loadMagnitude;
     public final double bendingLength;
+    public final Properties.LoadDurations loadDuration;
 
 
-    public LoadCase(Properties.LoadTypes loadType, double loadMagnitude, double bendingLength) {
+    public LoadCase(Properties.LoadTypes loadType, Properties.LoadDurations loadDuration,
+                    double loadMagnitude, double bendingLength) {
         this.loadType = loadType;
         this.loadMagnitude = loadMagnitude;
         this.bendingLength = bendingLength;
+        this.loadDuration = loadDuration;
     }
 
     public abstract double minimumThicknessForDeflection(double maxDeflection);

@@ -24,7 +24,7 @@ public class LaminationTest {
 
     @Test
     public void findSufficientLamination() throws Exception {
-        LoadCase lineLoad = new LineLoad(1E3, 1.1);
+        LoadCase lineLoad = new LineLoad(1E3, 1.1, Properties.LoadDurations.SHORT_3S);
         Lamination l = Lamination.findSufficientLamination(14E-3,
                                                            15E-3,
                                                            1.1,
@@ -32,9 +32,9 @@ public class LaminationTest {
                                                            );
         System.out.println("Glasses : "+ Arrays.toString(l.layerThicknesses));
         Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6, 2E6);
-        assertEquals(16.3E-3, e.forDeflection, 0.0001);
-        assertEquals(18.0E-3, e.forStress[0], 0.0001);
-        assertEquals(18.0E-3, e.forStress[1], 0.0001);
+        assertEquals(13.5E-3, e.forDeflection, 0.0001);
+        assertEquals(14.89E-3, e.forStress[0], 0.0001);
+        assertEquals(14.89E-3, e.forStress[1], 0.0001);
     }
 
 }
