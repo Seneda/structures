@@ -1,5 +1,6 @@
 package com.seneda.structures.glass;
 
+import com.seneda.structures.util.ListReader;
 import com.seneda.structures.util.TableReader;
 
 import java.io.FileNotFoundException;
@@ -28,6 +29,17 @@ public class Properties {
     public static final TableReader FactorForGlassSurfaceProfile = loadTable("factor_for_glass_surface_profile.csv");
     public static final TableReader EdgeFactor = loadTable("edge_factor.csv");
 
+    public static final double[] availableSheetThicknesses = loadList("available_sheet_thicknesses.csv");
+    public static final double[] availableInterlayerThicknesses = loadList("available_interlayer_thicknesses.csv");
+
+    private static double[] loadList(String filename) {
+        try {
+            ListReader listReader = new ListReader(filename, dataPath);
+            return listReader.toArray();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("Data file Missing : " + filename + e.toString());
+        }
+    }
 
     public static TableReader loadTable(String filename) {
         try {
