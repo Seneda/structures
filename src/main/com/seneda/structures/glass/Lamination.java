@@ -1,5 +1,7 @@
 package com.seneda.structures.glass;
 
+import com.seneda.structures.cantilever.LoadCase;
+
 import java.util.Arrays;
 
 import static java.lang.Math.*;
@@ -19,6 +21,7 @@ public class Lamination {
     private double[] layerMidPointOffsets;
     private double noShearTransferThickness;
     private double momentOfInertia;
+
 
     public Lamination(double[] glassThicknesses, double[] interlayerThicknesses, double length){
         this.layerThicknesses = glassThicknesses;
@@ -81,6 +84,10 @@ public class Lamination {
 
     }
 
+    private static double getInterlayerShearModulus(LoadCase loadCase){
+        return 0.8E6; // Replace this with the proper lookup
+    }
+
     private double calcShearFactor(double interlayerShearModulus) {
         double shearFactor = 1.0 /
                 (1 + (9.6 * Properties.YoungsModulus * momentOfInertia * interlayerThicknesses[0])/(interlayerShearModulus * pow(midPoint, 2) * pow(length, 2)));
@@ -119,17 +126,23 @@ public class Lamination {
 
     }
 
-    public EffectiveThicknesses getEffectiveThicknesses(double interlayerShearModulus) {
-        double forDeflection = calcEffectiveThicknessForDeflection(interlayerShearModulus);
-        double[] forStress = calcEffectiveThicknessesForStress(interlayerShearModulus, forDeflection);
+    public EffectiveThicknesses getEffectiveThicknesses(double deflectionInterlayerShearModulus, double stressInterlayerShearModulus) {
+        double forDeflection = calcEffectiveThicknessForDeflection(deflectionInterlayerShearModulus);
+        double[] forStress = calcEffectiveThicknessesForStress(stressInterlayerShearModulus, forDeflection);
         return new EffectiveThicknesses(forDeflection, forStress);
     }
 
     private static double[] availableGlassThicknesses = new double[] {6E-3, 8E-3, 10E-3, 12E-3, 15E-3};
     private static double[] availableInterlayerThicknesses = new double[] {1.5E-3};
 
-    public static Lamination findSufficientLamination(double minThicknessForDeflection, double minThicknessForStress, double length, double interlayerShearModulus){
+    public static Lamination findSufficientLamination(double minThicknessForDeflection,
+                                                      double minThicknessForStress,
+                                                      double length,
+                                                      LoadCase deflectionLoadCase,
+                                                      LoadCase stressLoadCase){
         Lamination l;
+        double deflectionInterlayerShearModulus = getInterlayerShearModulus(deflectionLoadCase);
+        double stressInterlayerShearModulus = getInterlayerShearModulus(stressLoadCase);
         double[] glassThicknesses;
         double[] interLayerThicknesses;
         for (int noOfLayers : new int[]{2,3}){
@@ -143,7 +156,7 @@ public class Lamination {
                         interLayerThicknesses = new double[]{ti, ti};
                     }
                     l = new Lamination(glassThicknesses, interLayerThicknesses, length);
-                    EffectiveThicknesses e = l.getEffectiveThicknesses(interlayerShearModulus);
+                    EffectiveThicknesses e = l.getEffectiveThicknesses(deflectionInterlayerShearModulus, stressInterlayerShearModulus);
                     if ((e.forDeflection > minThicknessForDeflection) && (e.minForStress > minThicknessForStress))
                         return l;
                 }
