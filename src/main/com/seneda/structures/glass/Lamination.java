@@ -132,8 +132,8 @@ public class Lamination {
         return new EffectiveThicknesses(forDeflection, forStress);
     }
 
-    private static double[] availableGlassThicknesses = new double[] {6E-3, 8E-3, 10E-3, 12E-3, 15E-3};
-    private static double[] availableInterlayerThicknesses = new double[] {1.5E-3};
+    private static double[] availableGlassThicknesses = new double[] {6E-3, 8E-3, 10E-3, 12E-3, 15E-3, 20E-3};  // TODO Put available glass sheet thicknesses into a CSV file
+    private static double[] availableInterlayerThicknesses = new double[] {1.5E-3}; // TODO Put available Interlayer Thicknesses into a csv file.
 
     public static Lamination findSufficientLamination(double minThicknessForDeflection,
                                                       double minThicknessForStress,

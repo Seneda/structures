@@ -2,6 +2,8 @@ package com.seneda.structures.cantilever;
 
 import com.seneda.structures.glass.Glass;
 import com.seneda.structures.glass.Lamination;
+import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import static com.seneda.structures.util.Utils.max;
 import static com.seneda.structures.util.Utils.maxIndex;
@@ -28,13 +30,17 @@ public class Cantilever {
         this.height = height;
         this.loadCases = loadCases;
         this.glass = glass;
-        maxAllowedDeflection = 25E-6; //TODO Find out where this value comes from
+        maxAllowedDeflection = 25E-3; //TODO Find out where this value comes from
         findMaxAllowedDeflection();
         findMinimumThicknesses();
         findLamination();
         findActualDeflection();
     }
 
+    public String toString(){
+        System.out.println(glass);
+        return ReflectionToStringBuilder.toString(this, new MultilineRecursiveToStringStyle());
+    }
 
     private void findLamination() {
         lamination = Lamination.findSufficientLamination(max(minThickessForDeflection),
@@ -43,6 +49,9 @@ public class Cantilever {
                                                          limitingDeflectionLoadCase,
                                                          limitingStressLoadCase
                                                          );
+        if (lamination == null) {
+            System.out.println("Could not find suitable lamination spec for the given requirements");
+        }
     }
 
     private void findActualDeflection() {
@@ -50,7 +59,7 @@ public class Cantilever {
 //        for (int i = 0; i < loadCases.length; i++){
 //            actualDeflectionUnderLoad[i] = loadCases[i].deflectionFromThickness(lamination.getEffectiveThicknesses().forDeflection);
 //        }
-        // TODO Figure out how to refactor to make this bit work.
+        // TODO Figure out how to calculate the actual defelction under load.
     }
 
     private void findMaxAllowedDeflection() {

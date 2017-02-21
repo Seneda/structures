@@ -14,7 +14,7 @@ public class CantileverTest {
     @Test
     public void testCantilever() throws Exception {
         double height = 1.1;
-        LoadCase[] loadCases = {new LineLoad(1.5E3, height)};
+        LoadCase[] loadCases = {new LineLoad(1E3, height)};
         Glass glass = new Glass(
                 Properties.Treatments.ANNEALED,
                 Properties.SurfaceProfiles.ASPRODUCED,
@@ -22,6 +22,7 @@ public class CantileverTest {
                 Properties.edgeTypes.ASCUT);
         Cantilever cantilever = new Cantilever(height, loadCases, glass);
         // TODO Find some numbers to actually test here
+        System.out.println(cantilever);
     }
 
 }
