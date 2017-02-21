@@ -17,6 +17,7 @@ public class Properties {
     public static final double MaterialPartialFactorBasicAnnealedGlass = generalConstants.get("Material Partial Factor For Basic Annealed Glass");
     public static final double MaterialPartialFactorPrestressedGlass = generalConstants.get("Material Partial Factor For Prestressed Glass");
     public static final double StrengtheningFactor = generalConstants.get("Strengthening Factor");
+    public static final double maxDeflection = generalConstants.get("Maximum Deflection");
 
     public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
     public static enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}

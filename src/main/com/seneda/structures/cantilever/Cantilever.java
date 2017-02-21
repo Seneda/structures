@@ -2,6 +2,7 @@ package com.seneda.structures.cantilever;
 
 import com.seneda.structures.glass.Glass;
 import com.seneda.structures.glass.Lamination;
+import com.seneda.structures.glass.Properties;
 import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
@@ -30,7 +31,7 @@ public class Cantilever {
         this.height = height;
         this.loadCases = loadCases;
         this.glass = glass;
-        maxAllowedDeflection = 25E-3; //TODO Find out where this value comes from
+        maxAllowedDeflection = Properties.maxDeflection;
         findMaxAllowedDeflection();
         findMinimumThicknesses();
         findLamination();
