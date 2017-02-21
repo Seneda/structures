@@ -14,12 +14,13 @@ public class CantileverTest {
     @Test
     public void testCantilever() throws Exception {
         double height = 1.1;
-        LoadCase[] loadCases = {new LineLoad(1E3, height)};
+        LoadCase[] loadCases = {new LineLoad(1E3, height),
+                                new UniformLoad(1E3, height)};
         Glass glass = new Glass(
-                Properties.Treatments.ANNEALED,
+                Properties.Treatments.THERMALLYTOUGHENED,
                 Properties.SurfaceProfiles.ASPRODUCED,
                 Properties.Material.FLOAT,
-                Properties.edgeTypes.ASCUT);
+                Properties.edgeTypes.POLISHED);
         Cantilever cantilever = new Cantilever(height, loadCases, glass);
         // TODO Find some numbers to actually test here
         System.out.println(cantilever);
