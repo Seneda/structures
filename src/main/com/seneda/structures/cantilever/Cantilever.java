@@ -31,11 +31,8 @@ public class Cantilever {
         maxAllowedDeflection = 25E-6; //TODO Find out where this value comes from
         findMaxAllowedDeflection();
         findMinimumThicknesses();
-
         findLamination();
-
         findActualDeflection();
-
     }
 
 

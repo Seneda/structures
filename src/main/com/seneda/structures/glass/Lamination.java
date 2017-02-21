@@ -85,7 +85,7 @@ public class Lamination {
     }
 
     private static double getInterlayerShearModulus(LoadCase loadCase){
-        return 0.8E6; // Replace this with the proper lookup
+        return 0.8E6; // TODO Make a full method for finding G
     }
 
     private double calcShearFactor(double interlayerShearModulus) {
