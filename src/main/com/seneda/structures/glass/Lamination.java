@@ -34,6 +34,10 @@ public class Lamination {
         calcMomentOfInertia();
     }
 
+    public String toString(){
+        return String.format("Lamination: %s, %s", Arrays.toString(layerThicknesses), Arrays.toString(interlayerThicknesses));
+    }
+
     private void calcLayerMidPointOffsets() {
         layerMidPointOffsets = new double[layerThicknesses.length];
         for (int i = 0; i < layerThicknesses.length; i++){
@@ -128,15 +132,13 @@ public class Lamination {
     public static Lamination findSufficientLamination(double minThicknessForDeflection,
                                                       double minThicknessForStress,
                                                       double length,
-                                                      LoadCase deflectionLoadCase,
-                                                      LoadCase stressLoadCase){
+                                                      LoadCase[] loadCases){
         Lamination l;
-        double deflectionInterlayerShearModulus = getInterlayerShearModulus(deflectionLoadCase);
-        double stressInterlayerShearModulus = getInterlayerShearModulus(stressLoadCase);
         double[] glassThicknesses;
         double[] interLayerThicknesses;
         for (int noOfLayers : new int[]{2,3}){
             for (double tl: Properties.availableSheetThicknesses) {
+                MAINLOOP:
                 for (double ti: Properties.availableInterlayerThicknesses) {
                     if (noOfLayers == 2){
                         glassThicknesses = new double[]{tl, tl};
@@ -146,9 +148,14 @@ public class Lamination {
                         interLayerThicknesses = new double[]{ti, ti};
                     }
                     l = new Lamination(glassThicknesses, interLayerThicknesses, length);
-                    EffectiveThicknesses e = l.getEffectiveThicknesses(deflectionInterlayerShearModulus, stressInterlayerShearModulus);
-                    if ((e.forDeflection > minThicknessForDeflection) && (e.minForStress > minThicknessForStress))
-                        return l;
+                    for (LoadCase loadCase : loadCases) {
+                        EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCase),
+                                                                           getInterlayerShearModulus(loadCase));
+                        if ((e.forDeflection < minThicknessForDeflection) || (e.minForStress < minThicknessForStress))
+                            continue MAINLOOP;
+                    }
+                    return l;
+                    // TODO do stress check, single
                 }
             }
         }

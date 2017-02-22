@@ -11,8 +11,8 @@ import static java.lang.Math.sqrt;
  */
 public class UniformLoad extends LoadCase {
 
-    public UniformLoad(double loadMagnitude, double bendingLength, Properties.LoadDurations loadDuration) {
-        super(Properties.LoadTypes.WIND, loadDuration, loadMagnitude, bendingLength);
+    public UniformLoad(Properties.LoadTypes loadType, double loadMagnitude, double bendingLength, Properties.LoadDurations loadDuration) {
+        super(loadType, loadDuration, loadMagnitude, bendingLength);
     }
 
     public double minimumThicknessForDeflection(double maxDeflection){

@@ -36,14 +36,14 @@ public class CantileverTest {
                 Properties.Material.FLOAT,
                 Properties.edgeTypes.ASCUT);
         Glass strongGlass = new Glass(
-                Properties.Treatments.CHEMICALLYTOUGHENED,
-                Properties.SurfaceProfiles.SANDBLASTED,
+                Properties.Treatments.THERMALLYTOUGHENED,
+                Properties.SurfaceProfiles.ASPRODUCED,
                 Properties.Material.DRAWN,
                 Properties.edgeTypes.POLISHED
         );
         LoadCase wind = new WindLoad(1E3, height);
         LoadCase crowd = new CrowdLoad(2E3, height);
-        LoadCase line = new LineLoad(1E3, height, Properties.LoadDurations.SHORT_3S);
+        LoadCase line = new LineLoad(1.5E3, height, Properties.LoadDurations.LONG_300S);
 
         return Arrays.asList(new Object[][] {
                 {height, basicGlass, new LoadCase[] {wind}},
@@ -53,14 +53,22 @@ public class CantileverTest {
                 {height, strongGlass, new LoadCase[] {crowd}},
                 {height, strongGlass, new LoadCase[] {line}},
                 {height, strongGlass, new LoadCase[] {line, wind}},
-                {height, strongGlass, new LoadCase[] {line, wind, crowd}},
-        }); // TODO Look at the results of these tests and consult with finley. Also try to figure out why compound load cases are so broken.
+                {height, strongGlass, new LoadCase[] {line}},
+                {height, strongGlass, new LoadCase[] {wind, crowd}},
+
+//                1.1m heght,  1.5kn line long thermallytough, aspro, drawn, polished 12+12,
+        });
     }
+
     @Test
     public void testCantilever() throws Exception {
         Cantilever cantilever = new Cantilever(height, loadCases, glass);
+        System.out.println("\n\n*****************************************\n" +
+                           "*****************************************\n\n");
         System.out.println(cantilever);
         assertTrue("Actual Deflection is ("+cantilever.limitingDeflectionUnderLoad+") should be lower than "+25E-3, cantilever.limitingDeflectionUnderLoad < 25E-3);
+
+
     }
 
 }

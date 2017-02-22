@@ -21,6 +21,10 @@ public abstract class LoadCase {
         this.loadDuration = loadDuration;
     }
 
+    public String toString(){
+        return String.format("Load Case: type: %s, force: %4.2e, duration: %s", loadType.toString(), loadMagnitude, loadDuration.toString());
+    }
+
     public abstract double minimumThicknessForDeflection(double maxDeflection);
 
     public abstract double minimumThicknessForStress(double maxStress);

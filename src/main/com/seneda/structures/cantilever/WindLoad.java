@@ -7,6 +7,6 @@ import com.seneda.structures.glass.Properties;
  */
 public class WindLoad extends UniformLoad {
     public WindLoad(double loadMagnitude, double bendingLength){
-        super(loadMagnitude, bendingLength, Properties.LoadDurations.SHORT_3S);
+        super(Properties.LoadTypes.WIND, loadMagnitude, bendingLength, Properties.LoadDurations.SHORT_3S);
     }
 }

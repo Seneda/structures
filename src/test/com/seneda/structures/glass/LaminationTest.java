@@ -28,7 +28,7 @@ public class LaminationTest {
         Lamination l = Lamination.findSufficientLamination(14E-3,
                                                            15E-3,
                                                            1.1,
-                                                           lineLoad, lineLoad
+                                                           new LoadCase[]{lineLoad, lineLoad}
                                                            );
         Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6, 2E6);
         assertEquals(13.5E-3, e.forDeflection, 0.0001);

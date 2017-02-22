@@ -7,6 +7,6 @@ import com.seneda.structures.glass.Properties;
  */
 public class CrowdLoad extends UniformLoad{
     public CrowdLoad(double loaMagnitude, double bendingLength) {
-        super(loaMagnitude, bendingLength, Properties.LoadDurations.LONG_300S);
+        super(Properties.LoadTypes.PERSONNEL, loaMagnitude, bendingLength, Properties.LoadDurations.LONG_300S);
     }
 }

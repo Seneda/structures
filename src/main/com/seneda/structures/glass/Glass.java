@@ -19,6 +19,15 @@ public class Glass {
         this.edgeType = edgeType;
     }
 
+    public String toString(){
+        return String.format(
+                "Glass: %s, %s, %s, %s",
+                structure.toString(),
+                surfaceProfile.toString(),
+                treatment.toString(),
+                edgeType.toString());
+    }
+
     /**
      * Implements the glass design strength equation.
      * Latex :

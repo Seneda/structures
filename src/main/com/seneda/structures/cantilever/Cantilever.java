@@ -3,8 +3,8 @@ package com.seneda.structures.cantilever;
 import com.seneda.structures.glass.Glass;
 import com.seneda.structures.glass.Lamination;
 import com.seneda.structures.glass.Properties;
-import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
+import java.util.Arrays;
 
 import static com.seneda.structures.util.Utils.max;
 import static com.seneda.structures.util.Utils.maxIndex;
@@ -18,15 +18,15 @@ public class Cantilever {
     private double height;
     private LoadCase[] loadCases;
     private Glass glass;
-    Lamination lamination;
     private double maxAllowedDeflection;
     private double maxAllowedStress;
     private double[] minThickessForDeflection;
     private double[] minThicknessForStress;
-    private double[] deflectionUnderLoad;
-    public double limitingDeflectionUnderLoad;
     private LoadCase limitingDeflectionLoadCase;
     private LoadCase limitingStressLoadCase;
+    Lamination lamination;
+    private double[] deflectionUnderLoad;
+    public double limitingDeflectionUnderLoad;
 
 
     public Cantilever(double height, LoadCase[] loadCases, Glass glass){
@@ -34,22 +34,34 @@ public class Cantilever {
         this.loadCases = loadCases;
         this.glass = glass;
         maxAllowedDeflection = Properties.maxDeflection;
-        findMaxAllowedDeflection();
+        findMaxAllowedStress();
         findMinimumThicknesses();
         findLamination();
         findActualDeflection();
     }
 
     public String toString(){
-        return ReflectionToStringBuilder.toString(this, new MultilineRecursiveToStringStyle());
+        String out = "Cantilever:\n\n";
+        out += "Height: " +height + "\n";
+        out += glass.toString() + "\n";
+        out += String.format("Load Cases:\n\t%s\n", Arrays.toString(loadCases));
+        out += String.format("Max Deflection: %4.2e\n", maxAllowedDeflection);
+        out += String.format("Max Stress: %4.2e\n", maxAllowedStress);
+        out += String.format("Min Thicknesses Defl: %s\n", Arrays.toString(minThickessForDeflection));
+        out += String.format("Min Thicknesses Stress: %s\n", Arrays.toString(minThicknessForStress));
+        out += lamination.toString() + "\n";
+        out += String.format("Limiting load for deflection:\n\t%s\n", limitingDeflectionLoadCase.toString());
+        out += String.format("Limiting load for stress:\n\t%s\n", limitingStressLoadCase.toString());
+        out += String.format("Actual Deflections Under Load Cases: %s\n", Arrays.toString(deflectionUnderLoad));
+        out += String.format("Max Deflection Under Load: %4.2e\n", limitingDeflectionUnderLoad);
+        return out;
     }
 
     private void findLamination() {
         lamination = Lamination.findSufficientLamination(max(minThickessForDeflection),
                                                          max(minThicknessForStress),
                                                          height,
-                                                         limitingDeflectionLoadCase,
-                                                         limitingStressLoadCase
+                                                         loadCases
                                                          );
         if (lamination == null) {
             System.out.println("Could not find suitable lamination spec for the given requirements");
@@ -64,7 +76,7 @@ public class Cantilever {
         limitingDeflectionUnderLoad = max(deflectionUnderLoad);
     }
 
-    private void findMaxAllowedDeflection() {
+    private void findMaxAllowedStress() {
         maxAllowedStress = Double.POSITIVE_INFINITY;
         // Maximum allowed stress is the minimum of the design strengths of all the load cases
         for (LoadCase loadCase: loadCases) {

@@ -7,6 +7,6 @@ import com.seneda.structures.glass.Properties;
  */
 public class PersonnelLoad extends UniformLoad {
     public PersonnelLoad(double loadMagnitude, double bendingLength) {
-        super(loadMagnitude, bendingLength, Properties.LoadDurations.MID_30S);
+        super(Properties.LoadTypes.PERSONNEL, loadMagnitude, bendingLength, Properties.LoadDurations.MID_30S);
     }
 }
