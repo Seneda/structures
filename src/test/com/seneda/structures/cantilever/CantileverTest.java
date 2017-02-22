@@ -54,7 +54,7 @@ public class CantileverTest {
                 {height, strongGlass, new LoadCase[] {line}},
                 {height, strongGlass, new LoadCase[] {line, wind}},
                 {height, strongGlass, new LoadCase[] {line, wind, crowd}},
-        });
+        }); // TODO Look at the results of these tests and consult with finley. Also try to figure out why compound load cases are so broken.
     }
     @Test
     public void testCantilever() throws Exception {
