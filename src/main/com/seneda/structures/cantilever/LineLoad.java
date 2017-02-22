@@ -33,4 +33,10 @@ public class LineLoad extends LoadCase
     {
         return  ((4 * loadMagnitude * pow(bendingLength, 3)) / (Properties.YoungsModulus * pow(thickness, 3)));
     }
+
+    public double stressFromThickness(double thickness)
+    {
+        return (6 * loadMagnitude * bendingLength * Properties.BrokenSheetFactor) / (pow(thickness, 2));
+    }
+
 }

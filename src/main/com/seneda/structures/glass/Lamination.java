@@ -1,9 +1,16 @@
 package com.seneda.structures.glass;
 
 import com.seneda.structures.cantilever.LoadCase;
+import org.apache.commons.lang3.ArrayUtils;
 
+import javax.lang.model.element.Element;
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
+import static com.seneda.structures.util.Utils.maxIndex;
+import static com.seneda.structures.util.Utils.max;
 import static java.lang.Math.*;
 
 /**
@@ -32,10 +39,16 @@ public class Lamination {
         calcLayerMidPointOffsets();
         calcNoShearTransferThicknessTerm();
         calcMomentOfInertia();
+        System.out.println(toString());
     }
 
     public String toString(){
         return String.format("Lamination: %s, %s", Arrays.toString(layerThicknesses), Arrays.toString(interlayerThicknesses));
+    }
+
+    public Lamination getBrokenLamination() {
+        return new Lamination(ArrayUtils.remove(layerThicknesses, maxIndex(layerThicknesses)),
+                              ArrayUtils.remove(interlayerThicknesses, maxIndex(interlayerThicknesses)), length);
     }
 
     private void calcLayerMidPointOffsets() {
@@ -123,17 +136,19 @@ public class Lamination {
 
     }
 
-    public EffectiveThicknesses getEffectiveThicknesses(double deflectionInterlayerShearModulus, double stressInterlayerShearModulus) {
-        double forDeflection = calcEffectiveThicknessForDeflection(deflectionInterlayerShearModulus);
-        double[] forStress = calcEffectiveThicknessesForStress(stressInterlayerShearModulus, forDeflection);
+    public EffectiveThicknesses getEffectiveThicknesses(double interlayerShearModulus) {
+        double forDeflection = calcEffectiveThicknessForDeflection(interlayerShearModulus);
+        double[] forStress = calcEffectiveThicknessesForStress(interlayerShearModulus, forDeflection);
         return new EffectiveThicknesses(forDeflection, forStress);
     }
 
     public static Lamination findSufficientLamination(double minThicknessForDeflection,
                                                       double minThicknessForStress,
+                                                      double maxStress,
                                                       double length,
                                                       LoadCase[] loadCases){
         Lamination l;
+        Lamination l_broken;
         double[] glassThicknesses;
         double[] interLayerThicknesses;
         for (int noOfLayers : new int[]{2,3}){
@@ -149,13 +164,28 @@ public class Lamination {
                     }
                     l = new Lamination(glassThicknesses, interLayerThicknesses, length);
                     for (LoadCase loadCase : loadCases) {
-                        EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCase),
-                                                                           getInterlayerShearModulus(loadCase));
+                        EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCase));
                         if ((e.forDeflection < minThicknessForDeflection) || (e.minForStress < minThicknessForStress))
                             continue MAINLOOP;
+                        // If one sheet breaks it still needs to work.
+
+
+                        // TODO Clean up this code for checking if the laminate would survive one sheet breaking
+                        double brokenThickness;
+                        if (noOfLayers == 2) {
+                            brokenThickness = tl;
+                        } else {
+                            Lamination brokenLamination = l.getBrokenLamination();
+                            brokenThickness = brokenLamination.getEffectiveThicknesses(getInterlayerShearModulus((loadCase))).minForStress;
+                        }
+                        System.out.println(String.format("Broken Thickness :  %4.2e", brokenThickness));
+                        System.out.println(String .format("max Stress: %4.2e   ---   %4.2e", maxStress, loadCase.stressFromThickness(brokenThickness)));
+                        if (maxStress < loadCase.stressFromThickness(brokenThickness)) {
+                            continue MAINLOOP;
+                        }
                     }
+
                     return l;
-                    // TODO do stress check, single
                 }
             }
         }

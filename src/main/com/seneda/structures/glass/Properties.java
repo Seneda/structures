@@ -19,6 +19,7 @@ public class Properties {
     public static final double StrengtheningFactor = generalConstants.get("Strengthening Factor");
     public static final double maxDeflection = generalConstants.get("Maximum Deflection");
     public static final double ULSFactor = generalConstants.get("ULS Factor");
+    public static final double BrokenSheetFactor = generalConstants.get("Broken Sheet Factor");
 
     public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
     public static enum LoadDurations {SHORT_3S, MID_30S, LONG_300S};

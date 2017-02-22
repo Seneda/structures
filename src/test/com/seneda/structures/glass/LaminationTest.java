@@ -16,7 +16,7 @@ public class LaminationTest {
     @Test
     public void getEffectiveThicknesses() throws Exception {
         Lamination l = new Lamination(new double[] {8E-3, 10E-3}, new double[]{1.5E-3}, 1.1);
-        Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E+6, 2E6);
+        Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6);
         assertEquals(15E-3, e.forDeflection, 0.0001);
         assertEquals(17.1E-3, e.forStress[0], 0.0001);
         assertEquals(16.1E-3, e.forStress[1], 0.0001);
@@ -27,10 +27,11 @@ public class LaminationTest {
         LoadCase lineLoad = new LineLoad(1E3, 1.1, Properties.LoadDurations.SHORT_3S);
         Lamination l = Lamination.findSufficientLamination(14E-3,
                                                            15E-3,
+                                                           1e+08,
                                                            1.1,
                                                            new LoadCase[]{lineLoad, lineLoad}
                                                            );
-        Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6, 2E6);
+        Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6);
         assertEquals(13.5E-3, e.forDeflection, 0.0001);
         assertEquals(14.89E-3, e.forStress[0], 0.0001);
         assertEquals(14.89E-3, e.forStress[1], 0.0001);

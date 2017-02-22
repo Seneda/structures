@@ -28,4 +28,8 @@ public class UniformLoad extends LoadCase {
         return (12*loadMagnitude*pow(bendingLength, 4)/(8*Properties.YoungsModulus*pow(thickness, 3)));
     }
 
+    public double stressFromThickness(double thickness)
+    {
+        return (6 * loadMagnitude * Properties.BrokenSheetFactor * pow(bendingLength, 2)) / (pow(thickness, 2));
+    }
 }

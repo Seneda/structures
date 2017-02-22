@@ -60,6 +60,7 @@ public class Cantilever {
     private void findLamination() {
         lamination = Lamination.findSufficientLamination(max(minThickessForDeflection),
                                                          max(minThicknessForStress),
+                                                         maxAllowedStress,
                                                          height,
                                                          loadCases
                                                          );

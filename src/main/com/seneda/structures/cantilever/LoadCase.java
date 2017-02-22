@@ -30,4 +30,6 @@ public abstract class LoadCase {
     public abstract double minimumThicknessForStressUnderUDL(double maxStress);
 
     public abstract double deflectionFromThickness(double thickness);
+
+    public abstract double stressFromThickness(double thickness);
 }

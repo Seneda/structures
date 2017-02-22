@@ -16,7 +16,6 @@ import static org.junit.Assert.*;
  */
 @RunWith(Parameterized.class)
 public class CantileverTest {
-
     private double height;
     private LoadCase[] loadCases;
     private Glass glass;
@@ -67,8 +66,6 @@ public class CantileverTest {
                            "*****************************************\n\n");
         System.out.println(cantilever);
         assertTrue("Actual Deflection is ("+cantilever.limitingDeflectionUnderLoad+") should be lower than "+25E-3, cantilever.limitingDeflectionUnderLoad < 25E-3);
-
-
     }
 
 }
