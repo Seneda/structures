@@ -23,7 +23,7 @@ public class LineLoad extends LoadCase
                 (Properties.YoungsModulus * maxDeflection)));
     }
 
-    public double minimumThicknessForStress(double maxstress)
+    public double minimumThicknessForStressUnderUDL(double maxstress)
     {
         return  sqrt( (6 * bendingLength * ULSFactor * loadMagnitude) /
                 (maxstress) );

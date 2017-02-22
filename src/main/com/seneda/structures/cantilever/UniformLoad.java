@@ -20,7 +20,7 @@ public class UniformLoad extends LoadCase {
                 (8*Properties.YoungsModulus*maxDeflection));
     }
 
-    public double minimumThicknessForStress(double maxStress) {
+    public double minimumThicknessForStressUnderUDL(double maxStress) {
         return bendingLength*sqrt((3* Properties.ULSFactor*loadMagnitude/maxStress));
     }
 
