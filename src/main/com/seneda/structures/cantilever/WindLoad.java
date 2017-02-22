@@ -1,0 +1,12 @@
+package com.seneda.structures.cantilever;
+
+import com.seneda.structures.glass.Properties;
+
+/**
+ * Created by seneda on 22/02/17.
+ */
+public class WindLoad extends UniformLoad {
+    public WindLoad(double loadMagnitude, double bendingLength){
+        super(loadMagnitude, bendingLength, Properties.LoadDurations.SHORT_3S);
+    }
+}

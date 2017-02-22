@@ -30,7 +30,6 @@ public class LaminationTest {
                                                            1.1,
                                                            lineLoad, lineLoad
                                                            );
-        System.out.println("Glasses : "+ Arrays.toString(l.layerThicknesses));
         Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6, 2E6);
         assertEquals(13.5E-3, e.forDeflection, 0.0001);
         assertEquals(14.89E-3, e.forStress[0], 0.0001);

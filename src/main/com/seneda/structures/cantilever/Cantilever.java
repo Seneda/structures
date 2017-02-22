@@ -23,9 +23,11 @@ public class Cantilever {
     private double maxAllowedStress;
     private double[] minThickessForDeflection;
     private double[] minThicknessForStress;
-    private double[] actualDeflectionUnderLoad;
+    private double[] deflectionUnderLoad;
+    public double limitingDeflectionUnderLoad;
     private LoadCase limitingDeflectionLoadCase;
     private LoadCase limitingStressLoadCase;
+
 
     public Cantilever(double height, LoadCase[] loadCases, Glass glass){
         this.height = height;
@@ -39,7 +41,6 @@ public class Cantilever {
     }
 
     public String toString(){
-        System.out.println(glass);
         return ReflectionToStringBuilder.toString(this, new MultilineRecursiveToStringStyle());
     }
 
@@ -56,11 +57,11 @@ public class Cantilever {
     }
 
     private void findActualDeflection() {
-//        actualDeflectionUnderLoad = new double[loadCases.length];
-//        for (int i = 0; i < loadCases.length; i++){
-//            actualDeflectionUnderLoad[i] = loadCases[i].deflectionFromThickness(lamination.getEffectiveThicknesses().forDeflection);
-//        }
-        // TODO Figure out how to calculate the actual defelction under load.
+        deflectionUnderLoad = new double[loadCases.length];
+        for (int i = 0; i < loadCases.length; i++){
+            deflectionUnderLoad[i] = loadCases[i].deflectionFromThickness(lamination.calcEffectiveThicknessForDeflection(Properties.InterlayerShearModulus.get(loadCases[i].loadDuration)));
+        }
+        limitingDeflectionUnderLoad = max(deflectionUnderLoad);
     }
 
     private void findMaxAllowedDeflection() {

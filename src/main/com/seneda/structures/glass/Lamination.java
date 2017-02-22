@@ -32,8 +32,6 @@ public class Lamination {
         calcLayerMidPointOffsets();
         calcNoShearTransferThicknessTerm();
         calcMomentOfInertia();
-        System.out.println(Arrays.toString(layerMidPoints));
-        System.out.println(Arrays.toString(layerMidPointOffsets));
     }
 
     private void calcLayerMidPointOffsets() {
@@ -71,8 +69,6 @@ public class Lamination {
             sumOfCubedThicknesses += pow(glassThickness, 3);
         }
         noShearTransferThickness = sumOfCubedThicknesses;
-        System.out.println("no Sheear Thickness : "+ noShearTransferThickness);
-
     }
 
     private void calcMomentOfInertia() {
@@ -80,8 +76,6 @@ public class Lamination {
         for (int i = 0; i < layerThicknesses.length; i++){
             momentOfInertia += layerThicknesses[i]*pow(layerMidPointOffsets[i], 2);
         }
-        System.out.println("Second moment of area : "+ momentOfInertia);
-
     }
 
     private static double getInterlayerShearModulus(LoadCase loadCase){
@@ -94,14 +88,13 @@ public class Lamination {
         return min(0.7, shearFactor); // 0.7 is the upper limit
     }
 
-    private double calcEffectiveThicknessForDeflection(double interlayerShearModulus) {
+    public double calcEffectiveThicknessForDeflection(double interlayerShearModulus) {
         return cbrt(noShearTransferThickness + 12 * calcShearFactor(interlayerShearModulus)* momentOfInertia);
     }
 
     private double[] calcEffectiveThicknessesForStress(double interlayerShearModulus, double effectiveThicknessForDeflection) {
         double[] effectiveThicknessesForStress = new double[layerThicknesses.length];
         double shearFactor = calcShearFactor(interlayerShearModulus);
-        System.out.println("Shear Factor : "+ shearFactor);
         for (int i = 0; i < layerThicknesses.length; i++) {
             effectiveThicknessesForStress[i] =
                     sqrt((pow(effectiveThicknessForDeflection, 3))/(layerThicknesses[i] + 2 * shearFactor * layerMidPointOffsets[i]));

@@ -53,14 +53,5 @@ public class TableParser {
         return string.toUpperCase().replaceAll("\\s+","");
     }
 
-    public static void main(String[] args) throws IOException{
-        System.out.println(new File(".").getCanonicalPath());
-
-        TableParser d = new TableParser(new File(".").getCanonicalPath() + "/src/com/seneda/Material/glass/glass_data/factor_for_glass_surface_profile.csv");
-        System.out.println(" data "+d.data.toString());
-
-        System.out.println("The value of drawn, as porduced is : " + d.getValue(Properties.Material.DRAWN.toString(), Properties.SurfaceProfiles.ASPRODUCED.toString()));
-    }
-
 }
 

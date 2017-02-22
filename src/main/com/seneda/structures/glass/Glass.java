@@ -12,10 +12,10 @@ public class Glass {
     public Material structure;
     public edgeTypes edgeType;
 
-    public Glass(Treatments treatment, SurfaceProfiles surfaceProfile, Material structure, edgeTypes edgeType) {
+    public Glass(Treatments treatment, SurfaceProfiles surfaceProfile, Material material, edgeTypes edgeType) {
         this.treatment = treatment;
         this.surfaceProfile = surfaceProfile;
-        this.structure = structure;
+        this.structure = material;
         this.edgeType = edgeType;
     }
 
