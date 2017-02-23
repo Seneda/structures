@@ -12,7 +12,7 @@ public class Properties {
     public static final String dataPath = "src/main/com/seneda/structures/glass/glass_data";
 
     public static final TableReader generalConstants = loadTable("general_constants.csv");
-    public static final double YoungsModulus = generalConstants.get("Youngs Modulus");
+    public static final double GlassYoungsModulus = generalConstants.get("Glass Youngs Modulus");
     public static final double CharacteristicStrengthOfBasicAnnealedGlass = generalConstants.get("Characteristic Strength of Basic Annealed Glass");
     public static final double MaterialPartialFactorBasicAnnealedGlass = generalConstants.get("Material Partial Factor For Basic Annealed Glass");
     public static final double MaterialPartialFactorPrestressedGlass = generalConstants.get("Material Partial Factor For Prestressed Glass");
@@ -21,8 +21,8 @@ public class Properties {
     public static final double ULSFactor = generalConstants.get("ULS Factor");
     public static final double BrokenSheetFactor = generalConstants.get("Broken Sheet Factor");
 
-    public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT};
-    public static enum LoadDurations {SHORT_3S, MID_30S, LONG_300S};
+    public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT}
+    public static enum LoadDurations {SHORT_3S, MID_30S, LONG_300S}
     public static enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
     public static enum Material {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
     public static enum SurfaceProfiles {ASPRODUCED, SANDBLASTED}
@@ -34,6 +34,9 @@ public class Properties {
     public static final TableReader EdgeFactor = loadTable("edge_factor.csv");
     public static final TableReader InterlayerShearModulus = loadTable("shear_modulii.csv");
 
+    public static enum BracketMaterials {STEEL, ALUMINIUM, STAINLESSSTEEL}
+    public static enum BracketMaterialPropertyTypes {YOUNGSMODULUS, YIELDSTRESS}
+    public static final TableReader BracketMaterialProperties = loadTable("bracket_material_properties.csv");
 
     public static final double[] availableSheetThicknesses = loadList("available_sheet_thicknesses.csv");
     public static final double[] availableInterlayerThicknesses = loadList("available_interlayer_thicknesses.csv");

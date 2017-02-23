@@ -17,7 +17,7 @@ public class UniformLoad extends LoadCase {
 
     public double minimumThicknessForDeflection(double maxDeflection){
         return cbrt((12*loadMagnitude*pow(bendingLength, 4))/
-                (8*Properties.YoungsModulus*maxDeflection));
+                (8*Properties.GlassYoungsModulus *maxDeflection));
     }
 
     public double minimumThicknessForStressUnderUDL(double maxStress) {
@@ -25,7 +25,7 @@ public class UniformLoad extends LoadCase {
     }
 
     public double deflectionFromThickness(double thickness){
-        return (12*loadMagnitude*pow(bendingLength, 4)/(8*Properties.YoungsModulus*pow(thickness, 3)));
+        return (12*loadMagnitude*pow(bendingLength, 4)/(8*Properties.GlassYoungsModulus *pow(thickness, 3)));
     }
 
     public double stressFromThickness(double thickness)

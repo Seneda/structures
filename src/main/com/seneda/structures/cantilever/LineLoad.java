@@ -20,7 +20,7 @@ public class LineLoad extends LoadCase
     public double minimumThicknessForDeflection(double maxDeflection)
     {
         return  (bendingLength *  cbrt( (4 * loadMagnitude) /
-                (Properties.YoungsModulus * maxDeflection)));
+                (Properties.GlassYoungsModulus * maxDeflection)));
     }
 
     public double minimumThicknessForStressUnderUDL(double maxstress)
@@ -31,7 +31,7 @@ public class LineLoad extends LoadCase
 
     public double deflectionFromThickness(double thickness)
     {
-        return  ((4 * loadMagnitude * pow(bendingLength, 3)) / (Properties.YoungsModulus * pow(thickness, 3)));
+        return  ((4 * loadMagnitude * pow(bendingLength, 3)) / (Properties.GlassYoungsModulus * pow(thickness, 3)));
     }
 
     public double stressFromThickness(double thickness)

@@ -3,14 +3,9 @@ package com.seneda.structures.glass;
 import com.seneda.structures.cantilever.LoadCase;
 import org.apache.commons.lang3.ArrayUtils;
 
-import javax.lang.model.element.Element;
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import static com.seneda.structures.util.Utils.maxIndex;
-import static com.seneda.structures.util.Utils.max;
 import static java.lang.Math.*;
 
 /**
@@ -101,7 +96,7 @@ public class Lamination {
 
     private double calcShearFactor(double interlayerShearModulus) {
         double shearFactor = 1.0 /
-                (1 + (9.6 * Properties.YoungsModulus * momentOfInertia * interlayerThicknesses[0])/(interlayerShearModulus * pow(midPoint, 2) * pow(length, 2)));
+                (1 + (9.6 * Properties.GlassYoungsModulus * momentOfInertia * interlayerThicknesses[0])/(interlayerShearModulus * pow(midPoint, 2) * pow(length, 2)));
         return min(0.7, shearFactor); // 0.7 is the upper limit
     }
 

@@ -1,0 +1,8 @@
+table name, Bracket material Properties
+table source, codes
+table layout, multi column
+,,
+,YOUNGS MODULUS, YIELD STRESS
+Steel, 210E9, 275E6
+Aluminium, 70E9, 160E6
+Stainless Steel, 200E9, 190E6
