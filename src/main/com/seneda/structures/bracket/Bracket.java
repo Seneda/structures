@@ -35,7 +35,12 @@ public class Bracket {
     }
 
     public double getThickness(){
-        return thickness;
+        for (double availableThickness: Properties.availableBracketThicknesses) {
+            if (availableThickness > thickness) {
+                return availableThickness;
+            }
+        }
+        return 0;
     }
 
     private void calcThicknessForDeflection() {

@@ -6,17 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ab951e-f69c-40cb-a6bd-f66e0aa8390d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/bracket_material_properties.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_bracket_thicknesses.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/glass/glass_data/general_constants.csv" afterPath="$PROJECT_DIR$/out/production/structures/com/seneda/structures/glass/glass_data/general_constants.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Lamination.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Lamination.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/general_constants.csv" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/general_constants.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/seneda/structures/glass/PropertiesTest.java" afterPath="$PROJECT_DIR$/src/test/com/seneda/structures/glass/PropertiesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java" afterPath="$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,18 +56,8 @@
       <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="37" column="79" lean-forward="false" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UniformLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="232">
+              <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -82,16 +66,14 @@
       <file leaf-file-name="Bracket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="203">
+              <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1758#1759#0" expanded="true" />
-                <element signature="e#1794#1795#0" expanded="true" />
-                <element signature="e#1869#1870#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#1949#1950#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +82,18 @@
       <file leaf-file-name="BracketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="198">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="available_bracket_thicknesses.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_bracket_thicknesses.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -214,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/general_constants.csv" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/characteristic_strength_of_prestressed_glass.csv" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/factor_for_glass_surface_profile.csv" />
         <option value="$PROJECT_DIR$/src/com/seneda/structures/materials/glass_data/GlassPropertiesTest.java" />
@@ -261,9 +252,10 @@
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/Cantilever.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/general_constants.csv" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/bracket_material_properties.csv" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_bracket_thicknesses.csv" />
         <option value="$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java" />
       </list>
     </option>
@@ -1148,27 +1140,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2017.02.23 at 10h 49m 34s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 10h 50m 12s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 10h 50m 18s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 11h 09m 01s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 11h 16m 47s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 11h 17m 26s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="tests - 2017.02.23 at 21h 29m 05s.xml">
-      <configuration name="tests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="tests - 2017.02.23 at 21h 29m 19s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
@@ -1176,6 +1147,27 @@
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="tests - 2017.02.23 at 21h 31m 20s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 45m 11s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 45m 32s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 45m 46s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 45m 52s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 46m 01s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 46m 17s.xml">
+      <configuration name="tests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="tests - 2017.02.23 at 21h 47m 19s.xml">
       <configuration name="tests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1271,16 +1263,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/com/seneda/structures/glass/GlassTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/seneda/structures/util/TableReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1613,14 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="37" column="79" lean-forward="false" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/interlayer_shear_modulii.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1637,26 +1611,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="39" column="60" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="203">
+          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_bracket_thicknesses.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="198">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>

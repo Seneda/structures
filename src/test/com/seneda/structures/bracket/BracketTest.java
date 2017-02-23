@@ -16,7 +16,7 @@ public class BracketTest {
         double embedLength = 0.1;
         double actualTipDeflection = 20E-3;
         Bracket b = new Bracket(moment, embedLength, length, actualTipDeflection, Properties.BracketMaterials.ALUMINIUM);
-        assertEquals(1.1E-2, b.getThickness(), 0.001);
+        assertEquals(12E-3, b.getThickness(), 0.001);
     }
 
 }

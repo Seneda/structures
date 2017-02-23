@@ -37,6 +37,7 @@ public class Properties {
     public static enum BracketMaterials {STEEL, ALUMINIUM, STAINLESSSTEEL}
     public static enum BracketMaterialPropertyTypes {YOUNGSMODULUS, YIELDSTRESS}
     public static final TableReader BracketMaterialProperties = loadTable("bracket_material_properties.csv");
+    public static final double[] availableBracketThicknesses = loadList("available_bracket_thicknesses.csv");
 
     public static final double[] availableSheetThicknesses = loadList("available_sheet_thicknesses.csv");
     public static final double[] availableInterlayerThicknesses = loadList("available_interlayer_thicknesses.csv");
