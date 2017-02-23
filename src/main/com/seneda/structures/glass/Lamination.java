@@ -144,7 +144,7 @@ public class Lamination {
 
     public static Lamination findSufficientLamination(double minThicknessForDeflection,
                                                       double minThicknessForStress,
-                                                      double maxStress,
+                                                      double[] maxStress,
                                                       double length,
                                                       LoadCase[] loadCases){
         Lamination l;
@@ -163,8 +163,8 @@ public class Lamination {
                         interLayerThicknesses = new double[]{ti, ti};
                     }
                     l = new Lamination(glassThicknesses, interLayerThicknesses, length);
-                    for (LoadCase loadCase : loadCases) {
-                        EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCase));
+                    for (int i = 0; i < loadCases.length; i++) {
+                        EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCases[i]));
                         if ((e.forDeflection < minThicknessForDeflection) || (e.minForStress < minThicknessForStress))
                             continue MAINLOOP;
                         // If one sheet breaks it still needs to work.
@@ -176,11 +176,11 @@ public class Lamination {
                             brokenThickness = tl;
                         } else {
                             Lamination brokenLamination = l.getBrokenLamination();
-                            brokenThickness = brokenLamination.getEffectiveThicknesses(getInterlayerShearModulus((loadCase))).minForStress;
+                            brokenThickness = brokenLamination.getEffectiveThicknesses(getInterlayerShearModulus((loadCases[i]))).minForStress;
                         }
                         System.out.println(String.format("Broken Thickness :  %4.2e", brokenThickness));
-                        System.out.println(String .format("max Stress: %4.2e   ---   %4.2e", maxStress, loadCase.stressFromThickness(brokenThickness)));
-                        if (maxStress < loadCase.stressFromThickness(brokenThickness)) {
+                        System.out.println(String .format("max Stress: %4.2e   ---   %4.2e", maxStress[i], loadCases[i].stressFromThickness(brokenThickness)));
+                        if (maxStress[i] < loadCases[i].stressFromThickness(brokenThickness)) {
                             continue MAINLOOP;
                         }
                     }

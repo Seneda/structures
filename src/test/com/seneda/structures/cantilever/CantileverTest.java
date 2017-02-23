@@ -61,9 +61,12 @@ public class CantileverTest {
 
     @Test
     public void testCantilever() throws Exception {
-        Cantilever cantilever = new Cantilever(height, loadCases, glass);
         System.out.println("\n\n*****************************************\n" +
-                           "*****************************************\n\n");
+                "*****************************************\n\n");
+        System.out.println("Attempted laminations: ");
+        Cantilever cantilever = new Cantilever(height, loadCases, glass);
+        System.out.println("\n");
+
         System.out.println(cantilever);
         assertTrue("Actual Deflection is ("+cantilever.limitingDeflectionUnderLoad+") should be lower than "+25E-3, cantilever.limitingDeflectionUnderLoad < 25E-3);
     }

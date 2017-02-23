@@ -19,7 +19,7 @@ public class Cantilever {
     private LoadCase[] loadCases;
     private Glass glass;
     private double maxAllowedDeflection;
-    private double maxAllowedStress;
+    private double[] maxAllowedStress;
     private double[] minThickessForDeflection;
     private double[] minThicknessForStress;
     private LoadCase limitingDeflectionLoadCase;
@@ -34,7 +34,7 @@ public class Cantilever {
         this.loadCases = loadCases;
         this.glass = glass;
         maxAllowedDeflection = Properties.maxDeflection;
-        findMaxAllowedStress();
+        findMaxAllowedStresses();
         findMinimumThicknesses();
         findLamination();
         findActualDeflection();
@@ -46,7 +46,7 @@ public class Cantilever {
         out += glass.toString() + "\n";
         out += String.format("Load Cases:\n\t%s\n", Arrays.toString(loadCases));
         out += String.format("Max Deflection: %4.2e\n", maxAllowedDeflection);
-        out += String.format("Max Stress: %4.2e\n", maxAllowedStress);
+        out += String.format("Max Stress: %s\n", Arrays.toString(maxAllowedStress));
         out += String.format("Min Thicknesses Defl: %s\n", Arrays.toString(minThickessForDeflection));
         out += String.format("Min Thicknesses Stress: %s\n", Arrays.toString(minThicknessForStress));
         out += lamination.toString() + "\n";
@@ -77,11 +77,11 @@ public class Cantilever {
         limitingDeflectionUnderLoad = max(deflectionUnderLoad);
     }
 
-    private void findMaxAllowedStress() {
-        maxAllowedStress = Double.POSITIVE_INFINITY;
+    private void findMaxAllowedStresses() {
+        maxAllowedStress = new double[loadCases.length];
         // Maximum allowed stress is the minimum of the design strengths of all the load cases
-        for (LoadCase loadCase: loadCases) {
-            maxAllowedStress = min(maxAllowedStress, glass.designStrengthAtEdge(loadCase.loadType));
+        for (int i = 0; i < loadCases.length; i++) {
+            maxAllowedStress[i] = glass.designStrengthAtEdge(loadCases[i].loadType);
         }
     }
 
@@ -93,7 +93,7 @@ public class Cantilever {
         limitingDeflectionLoadCase = loadCases[maxIndex(minThickessForDeflection)];
         minThicknessForStress = new double[loadCases.length];
         for (int i = 0; i < loadCases.length; i++){
-            minThicknessForStress[i] = loadCases[i].minimumThicknessForStressUnderUDL(maxAllowedStress);
+            minThicknessForStress[i] = loadCases[i].minimumThicknessForStressUnderUDL(maxAllowedStress[i]);
         }
         limitingStressLoadCase = loadCases[maxIndex(minThicknessForStress)];
     }

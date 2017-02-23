@@ -27,7 +27,7 @@ public class LaminationTest {
         LoadCase lineLoad = new LineLoad(1E3, 1.1, Properties.LoadDurations.SHORT_3S);
         Lamination l = Lamination.findSufficientLamination(14E-3,
                                                            15E-3,
-                                                           1e+08,
+                                                           new double[] {1e+08, 1e+08},
                                                            1.1,
                                                            new LoadCase[]{lineLoad, lineLoad}
                                                            );

@@ -30,6 +30,6 @@ public class UniformLoad extends LoadCase {
 
     public double stressFromThickness(double thickness)
     {
-        return (6 * loadMagnitude * Properties.BrokenSheetFactor * pow(bendingLength, 2)) / (pow(thickness, 2));
+        return (3 * loadMagnitude * Properties.BrokenSheetFactor * pow(bendingLength, 2)) / (pow(thickness, 2));
     }
 }
