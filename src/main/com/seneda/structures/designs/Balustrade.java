@@ -40,7 +40,8 @@ public class Balustrade {
            + String.format("\n\t%s", cantilever.lamination)
            + String.format("\n\t%s", bracket.toString());
         return o;
-
+    // TODO Get a list of all of the numbers which are needed in an output report
+        // TODO Look at the combo load things
     }
 
 
