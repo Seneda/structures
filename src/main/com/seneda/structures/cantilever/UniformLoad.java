@@ -32,4 +32,9 @@ public class UniformLoad extends LoadCase {
     {
         return (3 * loadMagnitude * Properties.BrokenSheetFactor * pow(bendingLength, 2)) / (pow(thickness, 2));
     }
+
+    public double moment()
+    {
+        return (loadMagnitude * pow(bendingLength, 2)) / 2;
+    }
 }

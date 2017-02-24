@@ -39,4 +39,8 @@ public class LineLoad extends LoadCase
         return (6 * loadMagnitude * bendingLength * Properties.BrokenSheetFactor) / (pow(thickness, 2));
     }
 
+    public double moment()
+    {
+        return loadMagnitude * bendingLength;
+    }
 }

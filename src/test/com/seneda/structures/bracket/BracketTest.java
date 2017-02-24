@@ -1,5 +1,7 @@
 package com.seneda.structures.bracket;
 
+import com.seneda.structures.cantilever.LineLoad;
+import com.seneda.structures.cantilever.LoadCase;
 import com.seneda.structures.glass.Properties;
 import org.junit.Test;
 
@@ -12,10 +14,10 @@ public class BracketTest {
     @Test
     public void getThickness() throws Exception {
         double length = 1.1;
-        double moment = 1E3 * length;
+        LoadCase[] load = {new LineLoad(1e3, length, Properties.LoadDurations.MID_30S)};
         double embedLength = 0.1;
         double actualTipDeflection = 20E-3;
-        Bracket b = new Bracket(moment, embedLength, length, actualTipDeflection, Properties.BracketMaterials.ALUMINIUM);
+        Bracket b = new Bracket(load, embedLength, length, actualTipDeflection, Properties.BracketMaterials.ALUMINIUM);
         assertEquals(12E-3, b.getThickness(), 0.001);
     }
 

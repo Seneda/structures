@@ -32,4 +32,6 @@ public abstract class LoadCase {
     public abstract double deflectionFromThickness(double thickness);
 
     public abstract double stressFromThickness(double thickness);
+
+    public abstract double moment();
 }

@@ -1,5 +1,6 @@
 package com.seneda.structures.bracket;
 
+import com.seneda.structures.cantilever.LoadCase;
 import com.seneda.structures.glass.Properties;
 
 import static java.lang.Math.cbrt;
@@ -12,7 +13,8 @@ import static java.lang.Math.sqrt;
 public class Bracket {
     private final double glassLength;
     private final double embedmentDepth;
-    private final double moment;
+    private double maxMoment;
+    public LoadCase[] loadCases;
     private double thickness;
     private double thicknessForDeflection;
     private double thicknessForStress;
@@ -20,18 +22,34 @@ public class Bracket {
     private double youngsModulus;
     private double yieldStress;
 
-    public Bracket(double moment, double embedmentDepth, double glassLength, double actualTipDeflection,
+    public Bracket(LoadCase[] loadCases, double embedmentDepth, double glassLength, double actualTipDeflection,
                    Properties.BracketMaterials material){
-        this.moment = moment;
+        this.loadCases = loadCases;
         this.embedmentDepth = embedmentDepth;
         this.glassLength = glassLength;
         this.actualTipDeflection = actualTipDeflection;
         this.youngsModulus = Properties.BracketMaterialProperties.get(material, Properties.BracketMaterialPropertyTypes.YOUNGSMODULUS);
         this.yieldStress = Properties.BracketMaterialProperties.get(material, Properties.BracketMaterialPropertyTypes.YIELDSTRESS);
 
+        calcMaxMoment();
         calcThicknessForStress();
         calcThicknessForDeflection();
         calcThickness();
+    }
+
+    public String toString(){
+        String out = "";
+        out += "Bracket : \n";
+        out += String.format("Embed Depth : %4.2e\n", embedmentDepth);
+        out += String.format("Thickness required : %4.2e\n", getThickness());
+        return out;
+    }
+
+    private void calcMaxMoment() {
+        maxMoment = 0;
+        for (LoadCase loadCase: loadCases){
+            maxMoment = max(maxMoment, loadCase.moment());
+        }
     }
 
     public double getThickness(){
@@ -44,12 +62,12 @@ public class Bracket {
     }
 
     private void calcThicknessForDeflection() {
-        thicknessForDeflection = cbrt((4*moment*embedmentDepth*(glassLength + embedmentDepth))/
+        thicknessForDeflection = cbrt((4* maxMoment *embedmentDepth*(glassLength + embedmentDepth))/
                                       (youngsModulus * (Properties.maxDeflection - actualTipDeflection)));
     }
 
     private void calcThicknessForStress() {
-        thicknessForStress = sqrt((6*moment*Properties.ULSFactor)/(yieldStress));
+        thicknessForStress = sqrt((6* maxMoment *Properties.ULSFactor)/(yieldStress));
     }
 
     private void calcThickness() {
