@@ -24,7 +24,7 @@ public class Cantilever {
     private double[] minThicknessForStress;
     private LoadCase limitingDeflectionLoadCase;
     private LoadCase limitingStressLoadCase;
-    Lamination lamination;
+    public Lamination lamination;
     private double[] deflectionUnderLoad;
     public double limitingDeflectionUnderLoad;
 

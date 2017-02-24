@@ -22,7 +22,7 @@ public abstract class LoadCase {
     }
 
     public String toString(){
-        return String.format("Load Case: type: %s, force: %4.2e, duration: %s", loadType.toString(), loadMagnitude, loadDuration.toString());
+        return String.format("Load Case:\n\t\t\ttype: %s, force: %4.2e, duration: %s", loadType.toString(), loadMagnitude, loadDuration.toString());
     }
 
     public abstract double minimumThicknessForDeflection(double maxDeflection);

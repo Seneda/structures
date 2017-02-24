@@ -39,9 +39,7 @@ public class Bracket {
 
     public String toString(){
         String out = "";
-        out += "Bracket : \n";
-        out += String.format("Embed Depth : %4.2e\n", embedmentDepth);
-        out += String.format("Thickness required : %4.2e\n", getThickness());
+        out += String.format("Bracket : \n\t\tEmbed Depth : %4.2e  Thickness required : %4.2e\n", embedmentDepth, getThickness());
         return out;
     }
 

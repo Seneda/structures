@@ -14,13 +14,35 @@ import java.util.Arrays;
  */
 public class Balustrade {
 
+    private final Cantilever cantilever;
+    private final Bracket bracket;
+
     public Balustrade(double glassHeight, Glass glass, LoadCase[] loadCases, double bracketEmbedmentDepth, Properties.BracketMaterials bracketMaterial){
-        Cantilever cantilever = new Cantilever(glassHeight, loadCases, glass);
-        Bracket bracket = new Bracket(loadCases, bracketEmbedmentDepth, glassHeight, cantilever.limitingDeflectionUnderLoad, bracketMaterial);
+
+        cantilever = new Cantilever(glassHeight, loadCases, glass);
+        bracket = new Bracket(loadCases, bracketEmbedmentDepth, glassHeight, cantilever.limitingDeflectionUnderLoad, bracketMaterial);
 
         System.out.println(cantilever);
         System.out.println(bracket);
+        System.out.println(getSummary(glassHeight, glass, loadCases, bracketEmbedmentDepth, bracketMaterial));
     }
+
+    public String getSummary(double glassHeight, Glass glass, LoadCase[] loadCases, double bracketEmbedmentDepth, Properties.BracketMaterials bracketMaterial){
+        String o = "Balustrade Design \n"
+                + "\nRequirements\n"
+                + String.format("\n\tHeight : %4.2e", glassHeight)
+                + String.format("\n\t%s", glass.toString());
+        o += "\n\tLoad Cases:";
+        for (LoadCase l : loadCases){
+            o += String.format("\n\t\t%s", l.toString());
+        }
+        o += String.format("\n\nOutput Specs\n")
+           + String.format("\n\t%s", cantilever.lamination)
+           + String.format("\n\t%s", bracket.toString());
+        return o;
+
+    }
+
 
     public static void main(String[] args){
         double height = 1.1;

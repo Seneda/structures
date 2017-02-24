@@ -38,7 +38,7 @@ public class Lamination {
     }
 
     public String toString(){
-        return String.format("Lamination: %s, %s", Arrays.toString(layerThicknesses), Arrays.toString(interlayerThicknesses));
+        return String.format("Lamination:  \n\t\tSheet Thicknesses : %s, Interlayer Thicknesses : %s", Arrays.toString(layerThicknesses), Arrays.toString(interlayerThicknesses));
     }
 
     public Lamination getBrokenLamination() {
