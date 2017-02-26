@@ -3,7 +3,7 @@ package com.seneda.structures.glass;
 import com.seneda.structures.cantilever.LoadCase;
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.util.Arrays;
+import java.util.*;
 
 import static com.seneda.structures.util.Utils.maxIndex;
 import static java.lang.Math.*;
@@ -16,6 +16,7 @@ public class Lamination {
     public final double[] layerThicknesses;
     public final double[] interlayerThicknesses;
     public final double length;
+    public List<Lamination> failedVersions;
 
     // Intermediate Properties
     private double midPoint;
@@ -24,6 +25,9 @@ public class Lamination {
     private double noShearTransferThickness;
     private double momentOfInertia;
 
+    public Map<Double, EffectiveThicknesses> effectiveThicknessesUnderLoads = new HashMap<Double, EffectiveThicknesses>();
+    public double brokenThickness;
+    public double brokenStress;
 
     public Lamination(double[] glassThicknesses, double[] interlayerThicknesses, double length){
         this.layerThicknesses = glassThicknesses;
@@ -35,6 +39,10 @@ public class Lamination {
         calcNoShearTransferThicknessTerm();
         calcMomentOfInertia();
         System.out.println(toString());
+    }
+
+    public void addFailedVersions(List<Lamination> failedVersions){
+        this.failedVersions = failedVersions;
     }
 
     public String toString(){
@@ -90,8 +98,12 @@ public class Lamination {
         }
     }
 
-    private static double getInterlayerShearModulus(LoadCase loadCase){
+    public static double getInterlayerShearModulus(LoadCase loadCase){
         return Properties.InterlayerShearModulus.get(loadCase.loadDuration);
+    }
+
+    public static double getInterlayerShearModulus(Properties.LoadDurations loadDuration){
+        return Properties.InterlayerShearModulus.get(loadDuration);
     }
 
     private double calcShearFactor(double interlayerShearModulus) {
@@ -134,7 +146,9 @@ public class Lamination {
     public EffectiveThicknesses getEffectiveThicknesses(double interlayerShearModulus) {
         double forDeflection = calcEffectiveThicknessForDeflection(interlayerShearModulus);
         double[] forStress = calcEffectiveThicknessesForStress(interlayerShearModulus, forDeflection);
-        return new EffectiveThicknesses(forDeflection, forStress);
+        EffectiveThicknesses e = new EffectiveThicknesses(forDeflection, forStress);
+        this.effectiveThicknessesUnderLoads.put(interlayerShearModulus, e);
+        return e;
     }
 
     public static Lamination findSufficientLamination(double minThicknessForDeflection,
@@ -143,7 +157,7 @@ public class Lamination {
                                                       double length,
                                                       LoadCase[] loadCases){
         Lamination l;
-        Lamination l_broken;
+        List<Lamination> l_failed = new ArrayList<Lamination>();
         double[] glassThicknesses;
         double[] interLayerThicknesses;
         for (int noOfLayers : new int[]{2,3}){
@@ -160,8 +174,11 @@ public class Lamination {
                     l = new Lamination(glassThicknesses, interLayerThicknesses, length);
                     for (int i = 0; i < loadCases.length; i++) {
                         EffectiveThicknesses e = l.getEffectiveThicknesses(getInterlayerShearModulus(loadCases[i]));
-                        if ((e.forDeflection < minThicknessForDeflection) || (e.minForStress < minThicknessForStress))
+                        System.out.println(String.format("TeffDefl : %4.2e, TeffStr : %4.2e", e.forDeflection, e.minForStress));
+                        if ((e.forDeflection < minThicknessForDeflection) || (e.minForStress < minThicknessForStress)){
+                            l_failed.add(l);
                             continue MAINLOOP;
+                        }
                         // If one sheet breaks it still needs to work.
 
 
@@ -173,13 +190,19 @@ public class Lamination {
                             Lamination brokenLamination = l.getBrokenLamination();
                             brokenThickness = brokenLamination.getEffectiveThicknesses(getInterlayerShearModulus((loadCases[i]))).minForStress;
                         }
+
                         System.out.println(String.format("Broken Thickness :  %4.2e", brokenThickness));
                         System.out.println(String .format("max Stress: %4.2e   ---   %4.2e", maxStress[i], loadCases[i].stressFromThickness(brokenThickness)));
-                        if (maxStress[i] < loadCases[i].stressFromThickness(brokenThickness)) {
+                        double brokenStress = loadCases[i].stressFromThickness(brokenThickness);
+                        l.brokenThickness = brokenThickness;
+                        l.brokenStress = brokenStress;
+
+                        if (maxStress[i] < brokenStress) {
+                            l_failed.add(l);
                             continue MAINLOOP;
                         }
                     }
-
+                    l.failedVersions = l_failed;
                     return l;
                 }
             }

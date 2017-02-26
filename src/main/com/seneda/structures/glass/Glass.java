@@ -9,20 +9,20 @@ public class Glass {
 
     public Treatments treatment;
     public SurfaceProfiles surfaceProfile;
-    public Material structure;
+    public Material material;
     public edgeTypes edgeType;
 
     public Glass(Treatments treatment, SurfaceProfiles surfaceProfile, Material material, edgeTypes edgeType) {
         this.treatment = treatment;
         this.surfaceProfile = surfaceProfile;
-        this.structure = material;
+        this.material = material;
         this.edgeType = edgeType;
     }
 
     public String toString(){
         return String.format(
                 "Glass: %s, %s, %s, %s",
-                structure.toString(),
+                material.toString(),
                 surfaceProfile.toString(),
                 treatment.toString(),
                 edgeType.toString());
@@ -36,8 +36,8 @@ public class Glass {
      */
     public double designStrength(LoadTypes loadType){
         double Kmod = LoadDurationFactor.get(loadType);
-        double Ksp = FactorForGlassSurfaceProfile.get(structure, surfaceProfile);
-        double Fbk = CharacteristicStrengthOfPrestressedGlass.get(structure, treatment);
+        double Ksp = FactorForGlassSurfaceProfile.get(material, surfaceProfile);
+        double Fbk = CharacteristicStrengthOfPrestressedGlass.get(material, treatment);
         double Fgk = CharacteristicStrengthOfBasicAnnealedGlass;
         double Yma = MaterialPartialFactorBasicAnnealedGlass;
         double Ymv = MaterialPartialFactorPrestressedGlass;

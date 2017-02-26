@@ -12,12 +12,14 @@ import static java.lang.Math.sqrt;
  */
 public class Bracket {
     private final double glassLength;
-    private final double embedmentDepth;
-    private double maxMoment;
+    public final double embedmentDepth;
+    public final Properties.BracketMaterials material;
+    public double[] moments;
+    public double maxMoment;
     public LoadCase[] loadCases;
     private double thickness;
-    private double thicknessForDeflection;
-    private double thicknessForStress;
+    public double thicknessForDeflection;
+    public double thicknessForStress;
     private final double actualTipDeflection;
     private double youngsModulus;
     private double yieldStress;
@@ -28,6 +30,7 @@ public class Bracket {
         this.embedmentDepth = embedmentDepth;
         this.glassLength = glassLength;
         this.actualTipDeflection = actualTipDeflection;
+        this.material = material;
         this.youngsModulus = Properties.BracketMaterialProperties.get(material, Properties.BracketMaterialPropertyTypes.YOUNGSMODULUS);
         this.yieldStress = Properties.BracketMaterialProperties.get(material, Properties.BracketMaterialPropertyTypes.YIELDSTRESS);
 
@@ -40,18 +43,27 @@ public class Bracket {
     public String toString(){
         String out = "";
         out += String.format("Bracket : \n\t\tEmbed Depth : %4.2e  Thickness required : %4.2e\n", embedmentDepth, getThickness());
+        out += "\n\t Moments : ";
+        for (int i = 0; i < moments.length; i++){
+            out += String.format("\n\t\t Load %d : %4.2e", i, moments[i]);
+        }
+        out += String.format("\n\t T for Defl : %4.2e", thicknessForDeflection);
+        out += String.format("\n\t T for Str  : %4.2e", thicknessForStress);
         return out;
     }
 
     private void calcMaxMoment() {
         maxMoment = 0;
-        for (LoadCase loadCase: loadCases){
-            maxMoment = max(maxMoment, loadCase.moment());
+        moments = new double[loadCases.length];
+        for (int i = 0; i < loadCases.length; i++){
+            moments[i] = loadCases[i].moment();
+            maxMoment = max(maxMoment, moments[i]);
         }
     }
 
     public double getThickness(){
         for (double availableThickness: Properties.availableBracketThicknesses) {
+            System.out.println(availableThickness);
             if (availableThickness > thickness) {
                 return availableThickness;
             }
