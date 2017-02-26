@@ -9,6 +9,8 @@ import com.seneda.structures.glass.Properties;
 import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
+import java.util.Arrays;
+
 
 /**
  * Created by seneda on 19/02/17.
@@ -17,6 +19,7 @@ public class Balustrade {
 
     private final Cantilever cantilever;
     private final Bracket bracket;
+    public DesignOutput designOutput;
 
     private class DesignOutput {
         // Inputs
@@ -114,9 +117,42 @@ public class Balustrade {
             }
         }
 
+        @Override
         public String toString() {
-            return new ReflectionToStringBuilder(this, new MultilineRecursiveToStringStyle()).toString();
+            final StringBuilder sb = new StringBuilder("DesignOutput{");
+            sb.append(System.lineSeparator()+"glassHeight= ").append(glassHeight);
+            sb.append(System.lineSeparator()+" glassMaterial= ").append(glassMaterial);
+            sb.append(System.lineSeparator()+" glassSurfaceProfile= ").append(glassSurfaceProfile);
+            sb.append(System.lineSeparator()+" glassEdgeType= ").append(glassEdgeType);
+            sb.append(System.lineSeparator()+" glassTreatment= ").append(glassTreatment);
+            sb.append(System.lineSeparator()+" bracketMaterial= ").append(bracketMaterial);
+            sb.append(System.lineSeparator()+" loadCaseTypes= ").append(Arrays.toString(loadCaseTypes));
+            sb.append(System.lineSeparator()+" loadDurations= ").append(Arrays.toString(loadDurations));
+            sb.append(System.lineSeparator()+" loadMagnitudes= ").append(Arrays.toString(loadMagnitudes));
+            sb.append(System.lineSeparator()+" glassStrenthUnderLoads= ").append(Arrays.toString(glassStrenthUnderLoads));
+            sb.append(System.lineSeparator()+" maxGlassDeflectionUnderLoad= ").append(maxGlassDeflectionUnderLoad);
+            sb.append(System.lineSeparator()+" minGlassThicknessesForDeflection= ").append(Arrays.toString(minGlassThicknessesForDeflection));
+            sb.append(System.lineSeparator()+" minGlassThicknessesForStress= ").append(Arrays.toString(minGlassThicknessesForStress));
+            sb.append(System.lineSeparator()+" laminationLayerThicknesses= ").append(Arrays.toString(laminationLayerThicknesses));
+            sb.append(System.lineSeparator()+" laminationInterlayerThicknesses= ").append(Arrays.toString(laminationInterlayerThicknesses));
+            sb.append(System.lineSeparator()+" laminationThicknessForDeflection= ").append(Arrays.toString(laminationThicknessForDeflection));
+            sb.append(System.lineSeparator()+" laminationThicknessForStress= ").append(Arrays.toString(laminationThicknessForStress));
+            sb.append(System.lineSeparator()+" laminationBrokenThicknessForStress= ").append(laminationBrokenThicknessForStress);
+            sb.append(System.lineSeparator()+" laminationBrokenStress= ").append(laminationBrokenStress);
+            sb.append(System.lineSeparator()+" laminationDeflectionUnderLoads= ").append(Arrays.toString(laminationDeflectionUnderLoads));
+            sb.append(System.lineSeparator()+" laminationMaxDeflectionUnderLoads= ").append(laminationMaxDeflectionUnderLoads);
+            sb.append(System.lineSeparator()+" bracketMoments= ").append(Arrays.toString(bracketMoments));
+            sb.append(System.lineSeparator()+" maxBracketMoment= ").append(maxBracketMoment);
+            sb.append(System.lineSeparator()+" bracketMinThicknessForDeflection= ").append(bracketMinThicknessForDeflection);
+            sb.append(System.lineSeparator()+" bracketMinThicknessForStress= ").append(bracketMinThicknessForStress);
+            sb.append(System.lineSeparator()+" bracketChosenThickness= ").append(bracketChosenThickness);
+            sb.append('}');
+            return sb.toString();
         }
+
+//        public String toString() {
+//            return new ReflectionToStringBuilder(this, new MultilineRecursiveToStringStyle()).toString();
+//        }
 
     }
 
@@ -124,21 +160,27 @@ public class Balustrade {
 
     public Balustrade(double glassHeight, Glass glass, LoadCase[] loadCases, double bracketEmbedmentDepth, Properties.BracketMaterials bracketMaterial){
 
-        DesignOutput result = new DesignOutput();
-        result.setInputs(glassHeight, glass.material, glass.surfaceProfile, glass.edgeType, glass.treatment, bracketMaterial, loadCases);
+        designOutput = new DesignOutput();
+        designOutput.setInputs(glassHeight, glass.material, glass.surfaceProfile, glass.edgeType, glass.treatment, bracketMaterial, loadCases);
 
         cantilever = new Cantilever(glassHeight, loadCases, glass);
-        result.setCantilverRestrictions(cantilever.maxAllowedStress, cantilever.limitingDeflectionUnderLoad, cantilever.minThicknessForDeflection, cantilever.minThicknessForStress);
-        result.setLaminationDetails(cantilever.lamination);
-        result.setCatileverDeflections(cantilever.deflectionUnderLoad, cantilever.limitingDeflectionUnderLoad);
+        designOutput.setCantilverRestrictions(cantilever.maxAllowedStress, cantilever.limitingDeflectionUnderLoad, cantilever.minThicknessForDeflection, cantilever.minThicknessForStress);
+        designOutput.setLaminationDetails(cantilever.lamination);
+        designOutput.setCatileverDeflections(cantilever.deflectionUnderLoad, cantilever.limitingDeflectionUnderLoad);
 
         bracket = new Bracket(loadCases, bracketEmbedmentDepth, glassHeight, cantilever.limitingDeflectionUnderLoad, bracketMaterial);
-        result.setBracketDetails(bracket.moments, bracket.maxMoment, bracket.thicknessForDeflection, bracket.thicknessForStress, bracket.getThickness());
+        designOutput.setBracketDetails(bracket.moments, bracket.maxMoment, bracket.thicknessForDeflection, bracket.thicknessForStress, bracket.getThickness());
 //        System.out.println(cantilever);
-//        System.out.println(bracket);
-        System.out.println(result);
+//        System.out.println(BalustradeDesignForm);
+        System.out.println(designOutput);
+
+
 //        System.out.println(getSummary(glassHeight, glass, loadCases, bracketEmbedmentDepth, bracketMaterial));
 //        saveToFile("output.csv");
+    }
+
+    public String getSummary(){
+        return designOutput.toString();
     }
 
     public String getSummary(double glassHeight, Glass glass, LoadCase[] loadCases, double bracketEmbedmentDepth, Properties.BracketMaterials bracketMaterial){
@@ -209,11 +251,11 @@ public class Balustrade {
 //        file.writeLine("Inputs");
 //        file.newLine();
 //        file.writeRow("Glass Height", new double[]{cantilever.height});
-//        file.writeRow("Bracket Embedment Depth", new double[]{bracket.embedmentDepth});
+//        file.writeRow("Bracket Embedment Depth", new double[]{BalustradeDesignForm.embedmentDepth});
 //        file.writeRow("Glass", new String[] {"Material", "Surface Profile", "Treatment", "Edge Type"});
 //        file.writeRow("Glass", new Enum[]{cantilever.glass.material, cantilever.glass.surfaceProfile, cantilever.glass.treatment, cantilever.glass.edgeType});
 //        file.newLine();
-//        file.writeRow("Bracket Material", new Enum[]{bracket.material});
+//        file.writeRow("Bracket Material", new Enum[]{BalustradeDesignForm.material});
 //        file.writeRow("Load Cases", new String[]{"Type, Magnitude, Duration"});
 //        for (int i = 0; i < cantilever.loadCases.length; i++){
 //            LoadCase l = cantilever.loadCases[i];

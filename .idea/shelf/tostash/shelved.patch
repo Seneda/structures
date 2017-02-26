@@ -1,0 +1,114 @@
+Index: src/main/com/seneda/structures/glass/glass_data/shear_modulii.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/com/seneda/structures/glass/glass_data/shear_modulii.csv	(revision 9d66b845f06e944ca375ca9c2221bfd9025bede4)
++++ src/main/com/seneda/structures/glass/glass_data/shear_modulii.csv	(revision )
+@@ -5,4 +5,4 @@
+ ,G
+ SHORT_3S, 4E6
+ MID_30S, 1.5E6
+-LONG_300S, 0.6E6
+\ No newline at end of file
++LONG_300S, 0.8E6
+\ No newline at end of file
+Index: out/production/structures/com/seneda/structures/glass/glass_data/shear_modulii.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/structures/com/seneda/structures/glass/glass_data/shear_modulii.csv	(revision 9d66b845f06e944ca375ca9c2221bfd9025bede4)
++++ out/production/structures/com/seneda/structures/glass/glass_data/shear_modulii.csv	(revision )
+@@ -5,4 +5,4 @@
+ ,G
+ SHORT_3S, 4E6
+ MID_30S, 1.5E6
+-LONG_300S, 0.6E6
+\ No newline at end of file
++LONG_300S, 0.8E6
+\ No newline at end of file
+Index: src/main/com/seneda/structures/util/CSVWriter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/com/seneda/structures/util/CSVWriter.java	(revision )
++++ src/main/com/seneda/structures/util/CSVWriter.java	(revision )
+@@ -0,0 +1,76 @@
++package com.seneda.structures.util;
++
++import java.io.*;
++import java.nio.file.Path;
++import java.nio.file.Paths;
++
++/**
++ * Created by seneda on 24/02/17.
++ */
++public class CSVWriter {
++    private Writer writer;
++    private String separator = ",";
++
++    public CSVWriter(String filename) {
++        try {
++            File file = new File(filename);
++            FileWriter fileWriter = new FileWriter(file);
++            writer = new BufferedWriter(fileWriter);
++        } catch (IOException e) {
++            System.out.println(String.format("Couldn't open file %s for writing", filename));
++        }
++    }
++
++    public void write(Object o) {
++        try {
++            writer.write(o.toString());
++        } catch (IOException e) {
++            System.out.println("An I/O error occurred :" + e.toString());
++        }
++    }
++
++    public void writeLine(Object o) {
++        write(o);
++        newLine();
++    }
++
++    public void writeField(Object o) {
++        write(o);
++        write(separator);
++
++    }
++
++    public void newLine(){
++        write(System.lineSeparator());
++    }
++
++    public void emptyLine(){
++        newLine();
++        newLine();
++    }
++
++    public void writeRow(String rowTitle, double[] values){
++        write(rowTitle);
++        write(separator);
++        for (double value: values){
++            writeField(value);
++        }
++        newLine();
++    }
++    public void writeRow(String rowTitle, Object[] values){
++        write(rowTitle);
++        write(separator);
++        for (Object value: values){
++            writeField(value);
++        }
++        newLine();
++    }
++
++    public void close() {
++        try {
++            writer.close();
++        } catch (IOException e) {
++            System.out.println("An error occurred : "+e);
++        }
++    }
++}

@@ -1,0 +1,18 @@
+Balustrade Design
+
+Inputs
+
+Glass Height,1.1,
+Bracket Embedment Depth,0.1,
+Glass,Material,Surface Profile,Treatment,Edge Type,
+Glass,FLOAT,ASPRODUCED,THERMALLYTOUGHENED,POLISHED,
+
+Bracket Material,STEEL,
+Load Cases,Type, Magnitude, Duration,
+Load 1,LINE,1500.0,LONG_300S,
+Load 2,WIND,1000.0,SHORT_3S,
+Cantilever
+Load Cases,Load 1,Load 2,
+Max Stress,8.753125E7,9.0625E7,
+Deflection Thickness,0.016586843704841384,0.010786353526388738,
+Stress Thickness,0.013025117853934747,0.007751306897594087,

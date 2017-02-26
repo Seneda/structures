@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.seneda.structures.designs.BalustradeDesignForm">
+  <grid id="27dc6" binding="JPanelBracket" layout-manager="GridLayoutManager" row-count="13" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="806" height="615"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="84c82" class="javax.swing.JComboBox" binding="comboBoxGlassMaterial" custom-create="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <toolTipText value="Pick a glass material"/>
+        </properties>
+      </component>
+      <component id="35df3" class="javax.swing.JComboBox" binding="comboBoxBracketMaterial" custom-create="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="281b7" class="javax.swing.JSpinner" binding="spinnerEmbedmentDepth" custom-create="true">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <grid id="d0eab" binding="LoadPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f4b0b" class="javax.swing.JComboBox" binding="comboBoxLoadType0" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e0d3b" class="javax.swing.JComboBox" binding="comboBoxLoadDuration0" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="86aa" class="javax.swing.JSpinner" binding="spinnerLoadMagnitude0" custom-create="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="25e41" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="N"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="80f6b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="mm"/>
+        </properties>
+      </component>
+      <component id="4bbfe" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Material"/>
+        </properties>
+      </component>
+      <component id="613f2" class="javax.swing.JComboBox" binding="comboBoxGlassSurfaceProfiles" custom-create="true">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="af86c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Surface"/>
+        </properties>
+      </component>
+      <component id="17fa0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Bracket"/>
+        </properties>
+      </component>
+      <component id="5151f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Loads"/>
+        </properties>
+      </component>
+      <grid id="60eb6" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b7b94" class="javax.swing.JComboBox" binding="comboBoxLoadType1" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="e2561" class="javax.swing.JComboBox" binding="comboBoxLoadDuration1" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="4570a" class="javax.swing.JSpinner" binding="spinnerLoadMagnitude1" custom-create="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="77061" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="N"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2079b" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="db0c7" class="javax.swing.JComboBox" binding="comboBoxLoadType2" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="62f02" class="javax.swing.JComboBox" binding="comboBoxLoadDuration2" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="cc2e" class="javax.swing.JSpinner" binding="spinnerLoadMagnitude2" custom-create="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="765f6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="N"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5f7af" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2c3e9" class="javax.swing.JComboBox" binding="comboBoxLoadType3" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6ca41" class="javax.swing.JComboBox" binding="comboBoxLoadDuration3" custom-create="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="7391c" class="javax.swing.JSpinner" binding="spinnerLoadMagnitude3" custom-create="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="6ff0e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="N"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="6e150" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Treatment"/>
+        </properties>
+      </component>
+      <component id="b6edb" class="javax.swing.JLabel" binding="Edge">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Edge"/>
+        </properties>
+      </component>
+      <component id="f6612" class="javax.swing.JComboBox" binding="comboBoxGlassEdgeTypes" custom-create="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="297b0" class="javax.swing.JComboBox" binding="comboBoxGlassTeatments" custom-create="true">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <vspacer id="ce443">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="1" use-parent-layout="false">
+            <minimum-size width="10" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="f708a">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <scrollpane id="b629f">
+        <constraints>
+          <grid row="1" column="7" row-span="12" col-span="1" vsize-policy="7" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalScrollBarPolicy value="31"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="dbb55" class="javax.swing.JTextArea" binding="textAreaDesign">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <font name="Comic Sans MS"/>
+              <lineWrap value="false"/>
+              <text value="                            Result will be displayed here                            "/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="c47e7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Embedment Depth"/>
+        </properties>
+      </component>
+      <component id="db1eb" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Material"/>
+        </properties>
+      </component>
+      <component id="fd4e0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Glass"/>
+        </properties>
+      </component>
+      <component id="88aa2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Height"/>
+        </properties>
+      </component>
+      <component id="5a8ad" class="javax.swing.JSpinner" binding="spinnerHeight" custom-create="true">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="bb347" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="mm"/>
+        </properties>
+      </component>
+      <component id="f09a2" class="javax.swing.JButton" binding="findDesignButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Find Design"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
