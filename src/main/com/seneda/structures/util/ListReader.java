@@ -29,7 +29,9 @@ public class ListReader {
     List<Double> data;
 
     public ListReader(String filename, String filepath) throws FileNotFoundException{
-        BufferedReader file = new BufferedReader(new FileReader(new File(filepath, filename)));
+        InputStream is = getClass().getClassLoader().getResourceAsStream(filepath +"/"+ filename);
+        InputStreamReader isr = new InputStreamReader(is);
+        BufferedReader file = new BufferedReader(isr);
         try {
             readHeader(file);
             readData(file);
