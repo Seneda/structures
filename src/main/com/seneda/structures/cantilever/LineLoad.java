@@ -16,6 +16,9 @@ public class LineLoad extends LoadCase
     public LineLoad(double loadMagnitude, double bendingLength, Properties.LoadDurations loadDuration){
         super(Properties.LoadTypes.LINE, loadDuration, loadMagnitude, bendingLength);
     }
+    public LineLoad(Properties.LoadTypes loadType, double loadMagnitude, double bendingLength, Properties.LoadDurations loadDuration){
+        super(loadType, loadDuration, loadMagnitude, bendingLength);
+    }
 
     public double minimumThicknessForDeflection(double maxDeflection)
     {

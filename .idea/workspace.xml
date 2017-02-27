@@ -6,9 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ab951e-f69c-40cb-a6bd-f66e0aa8390d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/util/ListReader.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/util/ListReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/util/TableReader.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/util/TableReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java" afterPath="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java" />
     </list>
     <list id="08e0cfe2-7f61-44f1-9708-516b5aee6baa" name="tostash" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,8 +36,8 @@
       <file leaf-file-name="Balustrade.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/Balustrade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="160" column="117" lean-forward="false" selection-start-line="160" selection-start-column="107" selection-end-line="160" selection-end-column="117" />
+            <state relative-caret-position="29">
+              <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Balustrade#0" expanded="false" />
@@ -52,57 +54,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BalustradeDesignForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java">
+      <file leaf-file-name="LoadCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LoadCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2836#2846#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="169" column="13" lean-forward="false" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
+            <state relative-caret-position="74">
+              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JComboBox.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JComboBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="597" column="7" lean-forward="true" selection-start-line="597" selection-start-column="7" selection-end-line="597" selection-end-column="7" />
-              <folding>
-                <element signature="e#20050#20051#0" expanded="true" />
-                <element signature="e#20100#20101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
+      <file leaf-file-name="PersonnelLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/Reader.java">
+      <file leaf-file-name="CrowdLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LineLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -138,7 +134,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BalustradeDesignForm.form" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BalustradeDesignForm.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
@@ -186,8 +182,8 @@
       <find>result</find>
       <find>toStr</find>
       <find>Mul</find>
-      <find>Properties</find>
       <find>Crowd</find>
+      <find>Properties</find>
     </findStrings>
     <replaceStrings>
       <replace>setVisible</replace>
@@ -238,7 +234,6 @@
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/random notes" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/TableParser.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/WindLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_sheet_thicknesses.csv" />
         <option value="$PROJECT_DIR$/src/test/com/seneda/structures/cantilever/CantileverTest.java" />
         <option value="$PROJECT_DIR$/src/test/com/seneda/structures/glass/LaminationTest.java" />
@@ -246,8 +241,6 @@
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/bracket_material_properties.csv" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/glass_data/available_bracket_thicknesses.csv" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/balustrade.java" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java" />
         <option value="$PROJECT_DIR$/src/test/com/seneda/structures/bracket/BracketTest.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LoadCase.java" />
@@ -259,12 +252,15 @@
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/bracket/Bracket.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/bracket.form" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/bracket.java" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java" />
-        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/Balustrade.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/util/TableReader.java" />
         <option value="$PROJECT_DIR$/src/main/com/seneda/structures/util/ListReader.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form" />
       </list>
     </option>
   </component>
@@ -597,88 +593,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="glass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="glass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="glass_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="designs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -710,6 +624,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="designs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cantilever" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1271,7 +1211,7 @@
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10468521" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10468521" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4956076" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1389,14 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1479,14 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="44" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/UniformLoad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1504,22 +1428,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LoadCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,8 +1532,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488191990351" expanded="true" signature="98318:98336" ph="..." />
-            <marker date="1488191990351" expanded="true" signature="98318:98349" ph="..." />
+            <marker date="1488201127756" expanded="true" signature="95551:95569" ph="..." />
+            <marker date="1488201127756" expanded="true" signature="95551:95582" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1656,57 +1564,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="597" column="7" lean-forward="true" selection-start-line="597" selection-start-column="7" selection-end-line="597" selection-end-column="7" />
-          <folding>
-            <element signature="e#20050#20051#0" expanded="true" />
-            <element signature="e#20100#20101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="169" column="13" lean-forward="false" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2836#2846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/Balustrade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="160" column="117" lean-forward="false" selection-start-line="160" selection-start-column="107" selection-end-line="160" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Balustrade#0" expanded="false" />
-            <element signature="method#setCantilverRestrictions#0;class#DesignOutput#0;class#Balustrade#0" expanded="false" />
-            <element signature="method#setInputs#0;class#DesignOutput#0;class#Balustrade#0" expanded="false" />
-            <element signature="e#10346#10347#0" expanded="true" />
-            <element signature="e#10392#10393#0" expanded="true" />
-            <element signature="e#11089#11166#0" expanded="false" />
-            <element signature="e#12101#12153#0" expanded="false" />
-            <element signature="e#14539#14601#0" expanded="false" />
-            <element signature="e#14853#14883#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1726,14 +1588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/util/TableReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="40" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/util/ListReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1742,12 +1596,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/JComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="597" column="7" lean-forward="true" selection-start-line="597" selection-start-column="7" selection-end-line="597" selection-end-column="7" />
+          <folding>
+            <element signature="e#20050#20051#0" expanded="true" />
+            <element signature="e#20100#20101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="117" column="35" lean-forward="false" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2836#2846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/util/TableReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="40" selection-end-column="54" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/Balustrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="155" column="20" lean-forward="true" selection-start-line="155" selection-start-column="20" selection-end-line="155" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Balustrade#0" expanded="false" />
+            <element signature="method#setCantilverRestrictions#0;class#DesignOutput#0;class#Balustrade#0" expanded="false" />
+            <element signature="method#setInputs#0;class#DesignOutput#0;class#Balustrade#0" expanded="false" />
+            <element signature="e#10346#10347#0" expanded="true" />
+            <element signature="e#10392#10393#0" expanded="true" />
+            <element signature="e#11089#11166#0" expanded="false" />
+            <element signature="e#12101#12153#0" expanded="false" />
+            <element signature="e#14539#14601#0" expanded="false" />
+            <element signature="e#14853#14883#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LoadCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/glass/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/LineLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/PersonnelLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/cantilever/CrowdLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/seneda/structures/designs/BalustradeDesignForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
   </component>

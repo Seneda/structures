@@ -115,9 +115,12 @@ public class BalustradeDesignForm {
         comboBoxLoadDuration3 = new JComboBox<>(Properties.LoadDurations.values());
         SpinnerModel spinnerModelN = new SpinnerNumberModel(1000, 100, 4000, 10);
         spinnerLoadMagnitude0 = new JSpinner(spinnerModelN);
-        spinnerLoadMagnitude1 = new JSpinner(spinnerModelN);
-        spinnerLoadMagnitude2 = new JSpinner(spinnerModelN);
-        spinnerLoadMagnitude3 = new JSpinner(spinnerModelN);
+        SpinnerModel spinnerModelN1 = new SpinnerNumberModel(1000, 100, 4000, 10);
+        spinnerLoadMagnitude1 = new JSpinner(spinnerModelN1);
+        SpinnerModel spinnerModelN2 = new SpinnerNumberModel(1000, 100, 4000, 10);
+        spinnerLoadMagnitude2 = new JSpinner(spinnerModelN2);
+        SpinnerModel spinnerModelN3 = new SpinnerNumberModel(1000, 100, 4000, 10);
+        spinnerLoadMagnitude3 = new JSpinner(spinnerModelN3);
 
     }
 }
