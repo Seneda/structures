@@ -43,8 +43,7 @@ public class CantileverTest {
         LoadCase wind = new WindLoad(1E3, height);
         LoadCase crowd = new CrowdLoad(2E3, height);
         LoadCase line = new LineLoad(1.5E3, height, Properties.LoadDurations.LONG_300S);
-
-        return Arrays.asList(new Object[][] {
+        Object[][] testCases = new Object[][] {
                 {height, basicGlass, new LoadCase[] {wind}},
                 {height, basicGlass, new LoadCase[] {crowd}},
                 {height, basicGlass, new LoadCase[] {line}},
@@ -53,10 +52,8 @@ public class CantileverTest {
                 {height, strongGlass, new LoadCase[] {line}},
                 {height, strongGlass, new LoadCase[] {line, wind}},
                 {height, strongGlass, new LoadCase[] {line}},
-                {height, strongGlass, new LoadCase[] {wind, crowd}},
-
-//                1.1m heght,  1.5kn line long thermallytough, aspro, drawn, polished 12+12,
-        });
+                {height, strongGlass, new LoadCase[] {wind, crowd}}};
+        return Arrays.asList(testCases);
     }
 
     @Test

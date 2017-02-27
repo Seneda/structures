@@ -14,7 +14,7 @@ public class TableParser {
             BufferedReader reader = new BufferedReader(new FileReader(filename));
             String line, row;
             Scanner scanner;
-            List<String> columns = new ArrayList<String>();
+            List<String> columns = new ArrayList<>();
             line = reader.readLine();
             scanner = new Scanner(line);
             scanner.useDelimiter(",");
@@ -25,14 +25,14 @@ public class TableParser {
                 columns.add(column);
             }
 
-            data = new HashMap<String, Double>();
+            data = new HashMap<>();
 
             while ((line = reader.readLine()) != null) {
                 scanner = new Scanner(line);
                 scanner.useDelimiter(",");
                 row = stringToIdentifier(scanner.next());
-                for (int i = 0; i < columns.size(); i++) {
-                    data.put(row + columns.get(i), Double.parseDouble(scanner.next()));
+                for (String column : columns) {
+                    data.put(row + column, Double.parseDouble(scanner.next()));
                 }
             }
         } catch (IOException e) {

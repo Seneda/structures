@@ -44,21 +44,21 @@ public class TableReader {
         try {
             readHeader(file);
 
-            columns = new ArrayList<String>();
-            rows = new ArrayList<String>();
+            columns = new ArrayList<>();
+            rows = new ArrayList<>();
             getNextLine(file);
             while (scanner.hasNext()) {
                 columns.add(stringToIdentifier(scanner.next()));
             }
 
-            data = new HashMap<String, Double>();
+            data = new HashMap<>();
             while ((line = file.readLine()) != null) {
                 scanner = new Scanner(line);
                 scanner.useDelimiter(",");
                 String row = stringToIdentifier(scanner.next());
                 rows.add(row);
-                for (int i = 0; i < columns.size(); i++) {
-                    data.put(row+columns.get(i), Double.parseDouble(scanner.next()));
+                for (String column : columns) {
+                    data.put(row + column, Double.parseDouble(scanner.next()));
                 }
             }
         } catch (IOException e) {

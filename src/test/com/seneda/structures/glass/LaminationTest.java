@@ -32,9 +32,9 @@ public class LaminationTest {
                                                            new LoadCase[]{lineLoad, lineLoad}
                                                            );
         Lamination.EffectiveThicknesses e = l.getEffectiveThicknesses(2E6);
-        assertEquals(13.5E-3, e.forDeflection, 0.0001);
-        assertEquals(14.89E-3, e.forStress[0], 0.0001);
-        assertEquals(14.89E-3, e.forStress[1], 0.0001);
+        assertEquals(16.3E-3, e.forDeflection, 0.0001);
+        assertEquals(18.0E-3, e.forStress[0], 0.0001);
+        assertEquals(18.0E-3, e.forStress[1], 0.0001);
     }
 
 }

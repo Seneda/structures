@@ -21,12 +21,12 @@ public class Properties {
     public static final double ULSFactor = generalConstants.get("ULS Factor");
     public static final double BrokenSheetFactor = generalConstants.get("Broken Sheet Factor");
 
-    public static enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT}
-    public static enum LoadDurations {SHORT_3S, MID_30S, LONG_300S}
-    public static enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
-    public static enum Material {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
-    public static enum SurfaceProfiles {ASPRODUCED, SANDBLASTED}
-    public static enum edgeTypes {ASCUT, SEAMED, POLISHED }
+    public enum LoadTypes {WIND, LINE, PERSONNEL, SNOW, DEADLOAD, SELFWEIGHT}
+    public enum LoadDurations {SHORT_3S, MID_30S, LONG_300S}
+    public enum Treatments {ANNEALED, HEATSTRENGTHENED, THERMALLYTOUGHENED, CHEMICALLYTOUGHENED}
+    public enum Material {FLOAT, DRAWN, PATTERNED, ENAMELLED, ENAMELLEDPATTERNED}
+    public enum SurfaceProfiles {ASPRODUCED, SANDBLASTED}
+    public enum edgeTypes {ASCUT, SEAMED, POLISHED }
 
     public static final TableReader LoadDurationFactor = loadTable("factor_for_load_duration.csv");
     public static final TableReader CharacteristicStrengthOfPrestressedGlass = loadTable("characteristic_strength_of_prestressed_glass.csv") ;
@@ -34,8 +34,8 @@ public class Properties {
     public static final TableReader EdgeFactor = loadTable("edge_factor.csv");
     public static final TableReader InterlayerShearModulus = loadTable("shear_modulii.csv");
 
-    public static enum BracketMaterials {STEEL, ALUMINIUM, STAINLESSSTEEL}
-    public static enum BracketMaterialPropertyTypes {YOUNGSMODULUS, YIELDSTRESS}
+    public enum BracketMaterials {STEEL, ALUMINIUM, STAINLESSSTEEL}
+    public enum BracketMaterialPropertyTypes {YOUNGSMODULUS, YIELDSTRESS}
     public static final TableReader BracketMaterialProperties = loadTable("bracket_material_properties.csv");
     public static final double[] availableBracketThicknesses = loadList("available_bracket_thicknesses.csv");
 

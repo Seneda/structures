@@ -25,7 +25,6 @@ public class Lamination {
     private double noShearTransferThickness;
     private double momentOfInertia;
 
-    public Map<Double, EffectiveThicknesses> effectiveThicknessesUnderLoads = new HashMap<Double, EffectiveThicknesses>();
     public double brokenThickness;
     public double brokenStress;
 
@@ -147,7 +146,7 @@ public class Lamination {
         double forDeflection = calcEffectiveThicknessForDeflection(interlayerShearModulus);
         double[] forStress = calcEffectiveThicknessesForStress(interlayerShearModulus, forDeflection);
         EffectiveThicknesses e = new EffectiveThicknesses(forDeflection, forStress);
-        this.effectiveThicknessesUnderLoads.put(interlayerShearModulus, e);
+//        this.effectiveThicknessesUnderLoads.put(interlayerShearModulus, e);
         return e;
     }
 
@@ -157,7 +156,7 @@ public class Lamination {
                                                       double length,
                                                       LoadCase[] loadCases){
         Lamination l;
-        List<Lamination> l_failed = new ArrayList<Lamination>();
+        List<Lamination> l_failed = new ArrayList<>();
         double[] glassThicknesses;
         double[] interLayerThicknesses;
         for (int noOfLayers : new int[]{2,3}){

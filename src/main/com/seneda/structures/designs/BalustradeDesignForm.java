@@ -63,7 +63,7 @@ public class BalustradeDesignForm {
             }
 
             private LoadCase[] getLoadCases(double height) {
-                List<LoadCase> loadCases = new ArrayList<LoadCase>();
+                List<LoadCase> loadCases = new ArrayList<>();
                 JComboBox[] loadTypes = new JComboBox[]{comboBoxLoadType0, comboBoxLoadType1, comboBoxLoadType2, comboBoxLoadType3};
                 JSpinner[] loadMagnitudes = new JSpinner[]{spinnerLoadMagnitude0, spinnerLoadMagnitude1, spinnerLoadMagnitude2, spinnerLoadMagnitude3};
                 JComboBox[] loadDurations = new JComboBox[]{comboBoxLoadDuration0, comboBoxLoadDuration1, comboBoxLoadDuration2, comboBoxLoadDuration3};
@@ -73,14 +73,19 @@ public class BalustradeDesignForm {
                         LoadCase l;
                         double loadMagnitude = (int) loadMagnitudes[i].getValue();
                         Properties.LoadDurations loadDuration = (Properties.LoadDurations) loadDurations[i].getSelectedItem();
-                        if (loadType.equals("Line")){
-                            loadCases.add(new LineLoad(loadMagnitude, height, loadDuration));
-                        } else if (loadType.equals("Wind")) {
-                            loadCases.add(new WindLoad(loadMagnitude, height));
-                        } else if (loadType.equals("Personnel")) {
-                            loadCases.add(new PersonnelLoad(loadMagnitude, height));
-                        } else if (loadType.equals("Crowd")) {
-                            loadCases.add(new CrowdLoad(loadMagnitude, height));
+                        switch (loadType) {
+                            case "Line":
+                                loadCases.add(new LineLoad(loadMagnitude, height, loadDuration));
+                                break;
+                            case "Wind":
+                                loadCases.add(new WindLoad(loadMagnitude, height));
+                                break;
+                            case "Personnel":
+                                loadCases.add(new PersonnelLoad(loadMagnitude, height));
+                                break;
+                            case "Crowd":
+                                loadCases.add(new CrowdLoad(loadMagnitude, height));
+                                break;
                         }
                     }
                 }

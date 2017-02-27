@@ -41,7 +41,7 @@ public class ListReader {
     }
 
     private void readData(BufferedReader file) throws IOException{
-        data = new ArrayList<Double>();
+        data = new ArrayList<>();
         getNextLine(file);
         while (scanner.hasNext()){
             data.add(scanner.nextDouble());

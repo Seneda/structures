@@ -76,7 +76,7 @@ public class Balustrade {
             this.laminationThicknessForDeflection = new double[loadCaseTypes.length];
             this.laminationThicknessForStress = new double[loadCaseTypes.length];
 
-            System.out.println(lamination.effectiveThicknessesUnderLoads.values());
+//            System.out.println(lamination.effectiveThicknessesUnderLoads.values());
             System.out.println(Arrays.toString(loadCaseTypes));
 
             for (int i = 0; i < loadCaseTypes.length; i++){
