@@ -1,6 +1,6 @@
 package com.seneda.structures.glass;
 
-import com.seneda.structures.cantilever.LoadCase;
+import com.seneda.structures.components.cantilever.LoadCase;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.*;

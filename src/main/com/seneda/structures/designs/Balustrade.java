@@ -1,15 +1,12 @@
 package com.seneda.structures.designs;
 
-import com.seneda.structures.bracket.Bracket;
-import com.seneda.structures.cantilever.*;
+import com.seneda.structures.components.bracket.Bracket;
+import com.seneda.structures.components.cantilever.*;
 import com.seneda.structures.glass.Glass;
 import com.seneda.structures.glass.Lamination;
 import com.seneda.structures.glass.Properties;
 //import com.seneda.structures.util.CSVWriter;
-import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 

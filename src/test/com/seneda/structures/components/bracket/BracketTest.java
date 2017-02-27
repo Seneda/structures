@@ -1,7 +1,7 @@
-package com.seneda.structures.bracket;
+package com.seneda.structures.components.bracket;
 
-import com.seneda.structures.cantilever.LineLoad;
-import com.seneda.structures.cantilever.LoadCase;
+import com.seneda.structures.components.cantilever.LineLoad;
+import com.seneda.structures.components.cantilever.LoadCase;
 import com.seneda.structures.glass.Properties;
 import org.junit.Test;
 

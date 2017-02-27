@@ -1,4 +1,4 @@
-package com.seneda.structures.cantilever;
+package com.seneda.structures.components.cantilever;
 
 import com.seneda.structures.glass.Properties;
 

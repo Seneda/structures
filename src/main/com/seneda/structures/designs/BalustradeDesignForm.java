@@ -1,6 +1,6 @@
 package com.seneda.structures.designs;
 
-import com.seneda.structures.cantilever.*;
+import com.seneda.structures.components.cantilever.*;
 import com.seneda.structures.glass.Glass;
 import com.seneda.structures.glass.Properties;
 

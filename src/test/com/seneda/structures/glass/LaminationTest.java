@@ -1,10 +1,8 @@
 package com.seneda.structures.glass;
 
-import com.seneda.structures.cantilever.LineLoad;
-import com.seneda.structures.cantilever.LoadCase;
+import com.seneda.structures.components.cantilever.LineLoad;
+import com.seneda.structures.components.cantilever.LoadCase;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 import static org.junit.Assert.*;
 

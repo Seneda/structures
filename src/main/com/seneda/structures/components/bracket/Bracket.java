@@ -1,6 +1,6 @@
-package com.seneda.structures.bracket;
+package com.seneda.structures.components.bracket;
 
-import com.seneda.structures.cantilever.LoadCase;
+import com.seneda.structures.components.cantilever.LoadCase;
 import com.seneda.structures.glass.Properties;
 
 import static java.lang.Math.cbrt;

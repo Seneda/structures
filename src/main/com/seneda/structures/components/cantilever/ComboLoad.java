@@ -1,4 +1,4 @@
-//package com.seneda.structures.cantilever;
+//package com.seneda.structures.components.cantilever;
 //
 ///**
 // * Created by seneda on 27/02/17.
