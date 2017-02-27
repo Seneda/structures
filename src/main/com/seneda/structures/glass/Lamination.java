@@ -37,7 +37,6 @@ public class Lamination {
         calcLayerMidPointOffsets();
         calcNoShearTransferThicknessTerm();
         calcMomentOfInertia();
-        System.out.println(toString());
     }
 
     public void addFailedVersions(List<Lamination> failedVersions){

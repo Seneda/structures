@@ -63,7 +63,6 @@ public class Bracket {
 
     public double getThickness(){
         for (double availableThickness: Properties.availableBracketThicknesses) {
-            System.out.println(availableThickness);
             if (availableThickness > thickness) {
                 return availableThickness;
             }

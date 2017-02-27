@@ -35,7 +35,6 @@ public class TableReader {
 
 
     public TableReader(String filename, String filepath) throws FileNotFoundException {
-        System.out.println(filepath+"/"+filename+"\n");
         InputStream is = getClass().getClassLoader().getResourceAsStream(filepath +"/"+ filename);
         InputStreamReader isr = new InputStreamReader(is);
         BufferedReader file = new BufferedReader(isr);
