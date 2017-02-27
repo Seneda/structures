@@ -9,6 +9,7 @@ import com.seneda.structures.glass.Properties;
 import org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 
@@ -72,8 +73,12 @@ public class Balustrade {
         public void setLaminationDetails(Lamination lamination){
             this.laminationLayerThicknesses = lamination.layerThicknesses;
             this.laminationInterlayerThicknesses = lamination.interlayerThicknesses;
-            this.laminationThicknessForDeflection = new double[lamination.effectiveThicknessesUnderLoads.size()];
-            this.laminationThicknessForStress = new double[lamination.effectiveThicknessesUnderLoads.size()];
+            this.laminationThicknessForDeflection = new double[loadCaseTypes.length];
+            this.laminationThicknessForStress = new double[loadCaseTypes.length];
+
+            System.out.println(lamination.effectiveThicknessesUnderLoads.values());
+            System.out.println(Arrays.toString(loadCaseTypes));
+
             for (int i = 0; i < loadCaseTypes.length; i++){
                 Lamination.EffectiveThicknesses e = lamination.getEffectiveThicknesses(Lamination.getInterlayerShearModulus(loadDurations[i]));
                 this.laminationThicknessForDeflection[i] = e.forDeflection;

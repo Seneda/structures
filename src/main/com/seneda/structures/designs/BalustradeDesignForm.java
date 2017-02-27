@@ -45,16 +45,21 @@ public class BalustradeDesignForm {
         findDesignButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double height = (int) spinnerHeight.getValue() * 1.0E-3;
-                Glass glass = new Glass((Properties.Treatments) comboBoxGlassTeatments.getSelectedItem(), (Properties.SurfaceProfiles)comboBoxGlassSurfaceProfiles.getSelectedItem(),
-                        (Properties.Material) comboBoxGlassMaterial.getSelectedItem(), (Properties.edgeTypes)comboBoxGlassEdgeTypes.getSelectedItem());
-                double bracketEmbedDepth = (int)spinnerEmbedmentDepth.getValue()* 1E-3;
-                Properties.BracketMaterials bracketMaterial = (Properties.BracketMaterials) comboBoxBracketMaterial.getSelectedItem();
-//                LoadCase loadCase = new LineLoad(1000, height, (Properties.LoadDurations) comboBoxLoadDuration0.getSelectedItem());
-                LoadCase[] loadCases = getLoadCases(height);
+                try {
+                    double height = (int) spinnerHeight.getValue() * 1.0E-3;
+                    Glass glass = new Glass((Properties.Treatments) comboBoxGlassTeatments.getSelectedItem(), (Properties.SurfaceProfiles)comboBoxGlassSurfaceProfiles.getSelectedItem(),
+                            (Properties.Material) comboBoxGlassMaterial.getSelectedItem(), (Properties.edgeTypes)comboBoxGlassEdgeTypes.getSelectedItem());
+                    double bracketEmbedDepth = (int)spinnerEmbedmentDepth.getValue()* 1E-3;
+                    Properties.BracketMaterials bracketMaterial = (Properties.BracketMaterials) comboBoxBracketMaterial.getSelectedItem();
+    //                LoadCase loadCase = new LineLoad(1000, height, (Properties.LoadDurations) comboBoxLoadDuration0.getSelectedItem());
+                    LoadCase[] loadCases = getLoadCases(height);
 
-                Balustrade b = new Balustrade(height, glass, loadCases, bracketEmbedDepth, bracketMaterial);
-                textAreaDesign.setText(b.getSummary());
+                    Balustrade b = new Balustrade(height, glass, loadCases, bracketEmbedDepth, bracketMaterial);
+
+                    textAreaDesign.setText(b.getSummary());
+                } catch (Exception ex) {
+                    textAreaDesign.setText("Could not find suitable design\n"+ex+"\n"+ex.getStackTrace());
+                }
             }
 
             private LoadCase[] getLoadCases(double height) {
